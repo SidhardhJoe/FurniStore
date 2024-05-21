@@ -6,7 +6,7 @@ import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 
 const Page1 = () => {
-    const {navigate }=useNavigation();
+    const { navigate } = useNavigation();
     return (
         <ImageBackground
             source={require('../Images/Bgimg.png')}
@@ -17,10 +17,10 @@ const Page1 = () => {
             <View style={styles.view1}>
                 <Text style={styles.text3}>The best simple place where you discover most wonderful furnitures and make your home beautiful</Text>
             </View>
-            <TouchableOpacity onPress={()=>navigate('Page2')}>
-            <View style={styles.getstarted}>
-                <Text style={styles.textgetstarted}>Get Started</Text>
-            </View>
+            <TouchableOpacity onPress={() => navigate('Page2')}>
+                <View style={styles.getstarted}>
+                    <Text style={styles.textgetstarted}>Get Started</Text>
+                </View>
             </TouchableOpacity>
 
 
@@ -64,14 +64,14 @@ const styles = StyleSheet.create({
         backgroundColor: "black",
         marginTop: "50%",
         marginLeft: "30%",
-        borderRadius:5
+        borderRadius: 5
     },
-    textgetstarted:{
-        color:"white",
-        fontFamily:"GelasioRegular",
-        fontSize:18,
-        textAlign:"center",
-        marginTop:"5%"
+    textgetstarted: {
+        color: "white",
+        fontFamily: "GelasioRegular",
+        fontSize: 18,
+        textAlign: "center",
+        marginTop: "5%"
 
-    }
+    },
 });
