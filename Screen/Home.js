@@ -2,11 +2,14 @@ import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native';
+import { ScrollView } from 'react-native';
+import { details } from '../Data/Data';
 
 const Home = () => {
   const { navigate } = useNavigation();
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
+      {console.log(details)}
       <View style={styles.mainbar}>
         <TouchableOpacity onPress={() => navigate('SearchPage')}>
           <Image style={styles.search} source={require("../Icons/Search.png")} />
@@ -54,8 +57,7 @@ const Home = () => {
 
 
 
-
-    </View>
+    </ScrollView>
   )
 }
 
