@@ -41,7 +41,7 @@ const Page2 = () => {
                     </TouchableOpacity>
                 </View>
                 <View>
-                    <TouchableOpacity onPress={()=>navigate('Page1')}>
+                    <TouchableOpacity onPress={()=>navigate('SignUp')}>
                         <Text style={styles.signup}>SIGN UP</Text>
                     </TouchableOpacity>
                 </View>
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
         marginLeft: 30
     },
     welcomeback: {
-        fontFamily: "GelasioRegular",
+        fontFamily: "MerriweatherBold",
         fontSize: 30,
         marginLeft: 30
     },
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         borderBottomColor: "black",
         borderBottomWidth: 0.5,
         width: "80%",
-        marginLeft: "10%",
+        marginLeft: 30,
         marginTop: "10%"
     },
     emailtext: {
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
         borderBottomColor: "black",
         borderBottomWidth: 0.5,
         width: "80%",
-        marginLeft: "10%",
+        marginLeft: 30,
         marginTop: "10%"
     },
     passtext: {
