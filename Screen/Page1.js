@@ -56,7 +56,8 @@ const styles = StyleSheet.create({
     text3: {
         fontSize: 18,
         letterSpacing: 2,
-        color: "#808080"
+        color: "#808080",
+        fontFamily:"NunitoSansRegular"
     },
     getstarted: {
         height: 54,

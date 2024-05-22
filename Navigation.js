@@ -11,7 +11,9 @@ const Stack = createNativeStackNavigator();
 const LoadFonts=()=>{
     return useFonts({
         GelasioRegular:require('./Fonts/static/Gelasio-Regular.ttf'),
-        GelasioBold:require('./Fonts/static/Gelasio-Bold.ttf')
+        GelasioBold:require('./Fonts/static/Gelasio-Bold.ttf'),
+        NunitoSansRegular:require('./Fonts/static/NunitoSansRegular.ttf'),
+        NunitoSansSemiBold:require('./Fonts/static/NunitoSansSemiBold.ttf')
     })
 }
 
