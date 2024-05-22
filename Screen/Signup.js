@@ -37,7 +37,7 @@ const Signup = () => {
                 </KeyboardAvoidingView>
             </View>
             <View style={styles.signupbox2}>
-                <TouchableOpacity onPress={()=>navigate('Home')}>
+                <TouchableOpacity onPress={()=>navigate('BottomNav')}>
                     <Text style={styles.signuptext1}>Sign Up</Text>
                 </TouchableOpacity>
             </View>

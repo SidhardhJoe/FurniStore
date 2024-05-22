@@ -1,4 +1,3 @@
-
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
@@ -65,7 +64,7 @@ const styles = StyleSheet.create({
         backgroundColor: "black",
         marginTop: "50%",
         marginLeft: "30%",
-        borderRadius: 5
+        borderRadius: 10
     },
     textgetstarted: {
         color: "white",

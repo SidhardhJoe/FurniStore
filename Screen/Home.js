@@ -3,12 +3,16 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
+    <View style={styles.container}>
+      <Text style={{marginTop:"50%",textAlign:"center"}}>Homeoeor woerow eorowe roweo rowe rower owero</Text>
     </View>
   )
 }
 
 export default Home
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container:{
+        flex:1
+    }
+})

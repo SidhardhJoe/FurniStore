@@ -36,7 +36,7 @@ const Page2 = () => {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.login}>
-                    <TouchableOpacity onPress={() => navigate('Home')}>
+                    <TouchableOpacity onPress={() => navigate('BottomNav')}>
                         <Text style={styles.logintext}>Log In</Text>
                     </TouchableOpacity>
                 </View>
