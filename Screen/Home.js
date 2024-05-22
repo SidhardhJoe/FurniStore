@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <View style={styles.mainbar}>
-        <TouchableOpacity onPress={()=>navigate('SearchPage')}>
+        <TouchableOpacity onPress={() => navigate('SearchPage')}>
           <Image style={styles.search} source={require("../Icons/Search.png")} />
         </TouchableOpacity>
         <View>
@@ -20,12 +20,37 @@ const Home = () => {
           </View>
         </View>
         <View>
-          <TouchableOpacity onPress={()=>navigate('CartPage')}>
+          <TouchableOpacity onPress={() => navigate('CartPage')}>
             <Image style={styles.cart} source={require("../Icons/Cart.png")} />
           </TouchableOpacity>
         </View>
       </View>
-
+      <View style={styles.view2}>
+        <TouchableOpacity>
+          <Image source={require("../Icons/Popular.png")} />
+          <Text style={styles.bottomtext}>Popular</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image source={require("../Icons/Chair.png")} />
+          <Text style={styles.bottomtext}>Chair</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image source={require("../Icons/Table.png")} />
+          <Text style={styles.bottomtext}>Table</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image source={require("../Icons/ArmChair.png")} />
+          <Text style={styles.bottomtext}>Sofa</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image source={require("../Icons/Bed.png")} />
+          <Text style={styles.bottomtext}>Bed</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image source={require("../Icons/Lamp.png")} />
+          <Text style={styles.bottomtext}>Lamp</Text>
+        </TouchableOpacity>
+      </View>
 
 
 
@@ -38,7 +63,8 @@ export default Home
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    backgroundColor: "#FFFFFF"
   },
   mainbar: {
     marginTop: "15%",
@@ -67,5 +93,15 @@ const styles = StyleSheet.create({
     height: 26,
     width: 26,
     marginTop: 25
+  },
+  view2: {
+    flexDirection: "row",
+    marginLeft: 15,
+    marginTop: 20,
+    gap:20
+  },
+  bottomtext:{
+    fontFamily:"NunitoSansRegular",
+    textAlign:"center"
   }
 })

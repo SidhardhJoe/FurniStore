@@ -59,7 +59,8 @@ export default Signup
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor:"#FFFFFF"
     },
     topview: {
         display: "flex",
