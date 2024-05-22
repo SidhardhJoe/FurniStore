@@ -1,10 +1,35 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native';
+import { TouchableOpacity } from 'react-native';
 
 const Home = () => {
+  const { navigate } = useNavigation();
   return (
     <View style={styles.container}>
-      <Text style={{marginTop:"50%",textAlign:"center"}}>Homeoeor woerow eorowe roweo rowe rower owero</Text>
+      <View style={styles.mainbar}>
+        <TouchableOpacity onPress={()=>navigate('SearchPage')}>
+          <Image style={styles.search} source={require("../Icons/Search.png")} />
+        </TouchableOpacity>
+        <View>
+          <View>
+            <Text style={styles.heading1}>Make Home</Text>
+          </View>
+          <View>
+            <Text style={styles.heading2}>BEAUTIFUL</Text>
+          </View>
+        </View>
+        <View>
+          <TouchableOpacity onPress={()=>navigate('CartPage')}>
+            <Image style={styles.cart} source={require("../Icons/Cart.png")} />
+          </TouchableOpacity>
+        </View>
+      </View>
+
+
+
+
+
     </View>
   )
 }
@@ -12,7 +37,35 @@ const Home = () => {
 export default Home
 
 const styles = StyleSheet.create({
-    container:{
-        flex:1
-    }
+  container: {
+    flex: 1
+  },
+  mainbar: {
+    marginTop: "15%",
+    height: 70,
+    width: "100%",
+    flexDirection: "row",
+    gap: 90,
+  },
+  search: {
+    height: 26,
+    width: 26,
+    marginLeft: 12,
+    marginTop: 25
+  },
+  heading1: {
+    fontSize: 20,
+    fontFamily: "GelasioRegular",
+    textAlign: "center"
+  },
+  heading2: {
+    fontSize: 24,
+    fontFamily: "GelasioBold",
+    textAlign: "center"
+  },
+  cart: {
+    height: 26,
+    width: 26,
+    marginTop: 25
+  }
 })
