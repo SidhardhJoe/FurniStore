@@ -6,6 +6,7 @@ import { useFonts } from 'expo-font';
 import Page1 from './Screen/Page1';
 import Page2 from './Screen/Page2';
 import Signup from './Screen/Signup';
+import Home from './Screen/Home';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,7 @@ function TabScreen() {
       <Stack.Screen name="Page1" component={Page1} />
       <Stack.Screen name='Page2' component={Page2}/>
       <Stack.Screen name='SignUp' component={Signup}/>
+      <Stack.Screen name='Home' component={Home}/>
     </Stack.Navigator>
   );
 }

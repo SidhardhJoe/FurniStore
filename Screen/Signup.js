@@ -37,7 +37,7 @@ const Signup = () => {
                 </KeyboardAvoidingView>
             </View>
             <View style={styles.signupbox2}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigate('Home')}>
                     <Text style={styles.signuptext1}>Sign Up</Text>
                 </TouchableOpacity>
             </View>
@@ -81,7 +81,6 @@ const styles = StyleSheet.create({
         borderBottomColor: "black",
         borderBottomWidth: 0.5,
         width: "80%",
-        height:60,
         marginLeft: 30,
         marginTop: "8%",
     },
