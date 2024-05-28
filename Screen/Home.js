@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native';
 import { ScrollView } from 'react-native';
 import { details } from '../Data/Data';
+import ItemComponent from './Component/ItemComponent';
 
 const Home = () => {
   const { navigate } = useNavigation();
@@ -54,7 +55,10 @@ const Home = () => {
           <Text style={styles.bottomtext}>Lamp</Text>
         </TouchableOpacity>
       </View>
-
+      <View style={{flexDirection:"row"}}>
+        <ItemComponent/>
+        <ItemComponent/>
+      </View>
 
 
     </ScrollView>

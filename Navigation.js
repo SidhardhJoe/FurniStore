@@ -13,6 +13,7 @@ import PaymentPage from './Screen/ProfilePages/PaymentPage';
 import ReviewPage from './Screen/ProfilePages/ReviewPage'
 import SettingsPage from './Screen/ProfilePages/SettingsPage';
 import ShippingPage from './Screen/ProfilePages/ShippingPage';
+import ProductPage from './Screen/ProductPage';
 
 
 const Stack = createNativeStackNavigator();
@@ -42,6 +43,7 @@ function TabScreen() {
       <Stack.Screen name='ReviewPage' component={ReviewPage}/>
       <Stack.Screen name='SettingsPage' component={SettingsPage}/>
       <Stack.Screen name='ShippingPage' component={ShippingPage}/>
+      <Stack.Screen name='ProductPage' component={ProductPage}/>
     </Stack.Navigator>
   );
 }
