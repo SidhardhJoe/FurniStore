@@ -8,6 +8,11 @@ import Signup from './Screen/Signup';
 import BottomNav from './BottomNav';
 import SearchPage from './Screen/SearchPage';
 import CartPage from './Screen/CartPage';
+import OrderPage from './Screen/ProfilePages/OrderPage';
+import PaymentPage from './Screen/ProfilePages/PaymentPage';
+import ReviewPage from './Screen/ProfilePages/ReviewPage'
+import SettingsPage from './Screen/ProfilePages/SettingsPage';
+import ShippingPage from './Screen/ProfilePages/ShippingPage';
 
 
 const Stack = createNativeStackNavigator();
@@ -32,6 +37,11 @@ function TabScreen() {
       <Stack.Screen name='BottomNav' component={BottomNav} />
       <Stack.Screen name='SearchPage' component={SearchPage} />
       <Stack.Screen name='CartPage' component={CartPage} />
+      <Stack.Screen name='OrderPage' component={OrderPage}/>
+      <Stack.Screen name='PaymentPage' component={PaymentPage}/>
+      <Stack.Screen name='ReviewPage' component={ReviewPage}/>
+      <Stack.Screen name='SettingsPage' component={SettingsPage}/>
+      <Stack.Screen name='ShippingPage' component={ShippingPage}/>
     </Stack.Navigator>
   );
 }
