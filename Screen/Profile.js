@@ -19,10 +19,14 @@ const Profile = () => {
       </View>
       <View style={styles.namebox} >
         <View style={styles.pp}>
+          <TouchableOpacity onPress={()=>navigate('SettingsPage')}>
           <Image source={require("../Images/pp.png")} />
+          </TouchableOpacity>
         </View>
         <View style={styles.insidetext}>
+          <TouchableOpacity onPress={()=>navigate('SettingsPage')}>
           <Text style={styles.name1}>Christo Kurian</Text>
+          </TouchableOpacity>
           <Text style={styles.name2}>ckking@gmail.com</Text>
         </View>
       </View>
