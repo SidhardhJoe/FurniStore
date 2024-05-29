@@ -25,7 +25,6 @@ export default FavItemComponent
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         backgroundColor: "white"
     },
     cover: {
@@ -39,9 +38,7 @@ const styles = StyleSheet.create({
         width: "100%",
         height: 150,
         flexDirection: "row",
-        borderBottomColor:"black",
-        borderBottomWidth:0.5,
-        backgroundColor:"black"
+    
     },
     textinside: {
         marginTop: 17,
