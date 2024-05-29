@@ -73,15 +73,15 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF"
   },
   mainbar: {
-    marginTop: "15%",
+    marginTop: "10%",
     height: 70,
     width: "100%",
     flexDirection: "row",
     gap: 90,
   },
   search: {
-    height: 26,
-    width: 26,
+    height: 25,
+    width: 25,
     marginLeft: 12,
     marginTop: 25
   },
@@ -96,8 +96,8 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   cart: {
-    height: 26,
-    width: 26,
+    height: 25,
+    width: 25,
     marginTop: 25
   },
   view2: {

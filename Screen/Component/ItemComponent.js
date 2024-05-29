@@ -12,8 +12,8 @@ const ItemComponent = () => {
           <View>
             <Image source={require('../../Listing/Bed/Bed1.png')} style={styles.outline} />
           </View>
-          <Text style={styles.text1}>Simple Bed</Text>
-          <Text style={styles.text2}>$ 12.00</Text>
+          <Text style={styles.text1}>Simple Bed Cover</Text>
+          <Text style={styles.text2}>$ 50.00</Text>
         </TouchableOpacity>
       </View>
     </View>

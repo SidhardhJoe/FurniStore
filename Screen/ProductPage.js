@@ -16,7 +16,7 @@ const ProductPage = () => {
           <Image source={require("../Listing/Bed/Bed1.png")} style={styles.coverimage} />
         </View>
         <Text style={styles.title1}>Simple Bed Cover</Text>
-        <Text style={styles.title2}>$ 50</Text>
+        <Text style={styles.title2}>$ 50.00</Text>
         <View style={styles.reviewbox}>
           <Image source={require(".././Icons/star.png")} style={styles.star} />
           <Text style={styles.text3}>4.2</Text>
@@ -32,11 +32,11 @@ const ProductPage = () => {
         </View>
       </View>
       <View style={styles.lastbar}>
-        <TouchableOpacity onPress={()=>navigate('Favourite')}>
+        <TouchableOpacity onPress={() => navigate('Favourite')}>
           <Image source={require("../Icons/Fav.png")} style={styles.favsicon} />
         </TouchableOpacity>
         <View style={styles.addtocart}>
-          <TouchableOpacity onPress={()=>navigate('CartPage')}>
+          <TouchableOpacity onPress={() => navigate('CartPage')}>
             <Text style={styles.atct}>Add To Cart</Text>
           </TouchableOpacity>
         </View>
