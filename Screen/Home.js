@@ -34,23 +34,23 @@ const Home = () => {
           <Image source={require("../Icons/Popular.png")} />
           <Text style={styles.bottomtext}>Popular</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigate('ChairPage')}>
           <Image source={require("../Icons/Chair.png")} />
           <Text style={styles.bottomtext}>Chair</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigate('TablePage')}>
           <Image source={require("../Icons/Table.png")} />
           <Text style={styles.bottomtext}>Table</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigate('SofaPage')}>
           <Image source={require("../Icons/ArmChair.png")} />
           <Text style={styles.bottomtext}>Sofa</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigate('BedPage')}>
           <Image source={require("../Icons/Bed.png")} />
           <Text style={styles.bottomtext}>Bed</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigate('LampPage')}>
           <Image source={require("../Icons/Lamp.png")} />
           <Text style={styles.bottomtext}>Lamp</Text>
         </TouchableOpacity>
