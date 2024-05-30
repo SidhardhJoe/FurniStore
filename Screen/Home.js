@@ -7,10 +7,11 @@ import { details } from '../Data/Data';
 import ItemComponent from './Component/ItemComponent';
 
 const Home = () => {
+  
   const { navigate } = useNavigation();
   return (
     <ScrollView style={styles.container}>
-      {/* {console.log(details)} */}
+      {console.log(details)}
       <View style={styles.mainbar}>
         <TouchableOpacity onPress={() => navigate('SearchPage')}>
           <Image style={styles.search} source={require("../Icons/Search.png")} />

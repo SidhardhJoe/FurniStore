@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     headers: {
         width: "100%",
         height: 150,
-        // flexDirection: "row",
+        flexDirection: "row",
     
     },
     textinside: {
