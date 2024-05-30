@@ -4,7 +4,7 @@ import { StatusBar } from 'expo-status-bar'
 import { useNavigation } from '@react-navigation/native';
 
 
-const Page2 = ({ email, setEmail, password, setPassword, isLogin, setIsLogin, handleAuthentication }) => {
+const Page2 = () => {
     const { navigate } = useNavigation();
     return (
         <View style={styles.container}>
@@ -25,8 +25,6 @@ const Page2 = ({ email, setEmail, password, setPassword, isLogin, setIsLogin, ha
                     <Text style={styles.emailtext}>Email</Text>
 
                     <TextInput
-                    value={email}
-                    onChangeText={setEmail}
                     autoCapitalize='none'
 
                     />
@@ -34,8 +32,6 @@ const Page2 = ({ email, setEmail, password, setPassword, isLogin, setIsLogin, ha
                 <View style={styles.passbox}>
                     <Text style={styles.passtext}>Password</Text>
                     <TextInput
-                    value={password}
-                    onChangeText={setPassword}
                     secureTextEntry
                      />
                 </View>
