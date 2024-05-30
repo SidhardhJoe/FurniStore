@@ -1,14 +1,17 @@
-import { StyleSheet, Text, View, Image, TextInput, KeyboardAvoidingView } from 'react-native'
+import { StyleSheet, Text, View, Image, TextInput, KeyboardAvoidingView, Platform } from 'react-native'
 import React from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 
 
-const Signup = () => {
+const Signup = ({ email, setEmail, password, setPassword, isLogin, setIsLogin, handleAuthentication }) => {
     const { navigate } = useNavigation();
+    const keyboardVerticalOffset = Platform.OS === 'android' ? 100 : 0;
     return (
-        <View style={styles.container}>
+        < KeyboardAvoidingView style={styles.container}
+            behavior='position'
+            keyboardVerticalOffset={keyboardVerticalOffset} >
             <StatusBar style="dark" />
             <View style={styles.topview}>
                 <Image source={require("../Images/Rectangle50.png")} style={styles.line1} />
@@ -18,26 +21,37 @@ const Signup = () => {
             <View>
                 <Text style={styles.welcome}>WELCOME</Text>
             </View>
-            <View style={styles.signupbox}>
+            <View >
                 <View style={styles.namebox}>
                     <Text style={styles.nametext}>Name</Text>
                     <TextInput />
                 </View>
                 <View style={styles.namebox}>
                     <Text style={styles.nametext}>Email</Text>
-                    <TextInput />
+                    <TextInput
+                        value={email}
+                        onChangeText={setEmail}
+                        autoCapitalize='none'
+                    />
                 </View>
                 <View style={styles.namebox}>
                     <Text style={styles.nametext}>Password</Text>
-                    <TextInput />
+                    <TextInput
+                        value={password}
+                        onChangeText={setPassword}
+                        secureTextEntry />
                 </View>
-                <KeyboardAvoidingView style={styles.namebox}>
+                <View style={styles.namebox}
+                >
                     <Text style={styles.nametext}>Confirm Password</Text>
-                    <TextInput />
-                </KeyboardAvoidingView>
+                    <TextInput
+                        value={password}
+                        onChangeText={setPassword}
+                        secureTextEntry />
+                </View>
             </View>
             <View style={styles.signupbox2}>
-                <TouchableOpacity onPress={()=>navigate('BottomNav')}>
+                <TouchableOpacity onPress={() => navigate('BottomNav')}>
                     <Text style={styles.signuptext1}>Sign Up</Text>
                 </TouchableOpacity>
             </View>
@@ -46,12 +60,12 @@ const Signup = () => {
                     <Text style={styles.lastbox1}>Already have account?</Text>
                 </View>
                 <View>
-                    <TouchableOpacity onPress={()=>navigate('Page2')}>
+                    <TouchableOpacity onPress={() => navigate('Page2')}>
                         <Text style={styles.lastbox2}>SIGN IN</Text>
                     </TouchableOpacity>
                 </View>
             </View>
-        </View>
+        </KeyboardAvoidingView>
     )
 }
 
@@ -60,7 +74,7 @@ export default Signup
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor:"#FFFFFF"
+        backgroundColor: "#FFFFFF"
     },
     topview: {
         display: "flex",
@@ -109,8 +123,8 @@ const styles = StyleSheet.create({
     lastbox: {
         flexDirection: "row",
         gap: 5,
-        justifyContent:"center",
-        marginTop:30
+        justifyContent: "center",
+        marginTop: 30
     },
     lastbox1: {
         fontSize: 18,

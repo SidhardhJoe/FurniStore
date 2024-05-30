@@ -4,7 +4,7 @@ import { StatusBar } from 'expo-status-bar'
 import { useNavigation } from '@react-navigation/native';
 
 
-const Page2 = () => {
+const Page2 = ({ email, setEmail, password, setPassword, isLogin, setIsLogin, handleAuthentication }) => {
     const { navigate } = useNavigation();
     return (
         <View style={styles.container}>
@@ -24,11 +24,20 @@ const Page2 = () => {
                 <View style={styles.emailbox}>
                     <Text style={styles.emailtext}>Email</Text>
 
-                    <TextInput />
+                    <TextInput
+                    value={email}
+                    onChangeText={setEmail}
+                    autoCapitalize='none'
+
+                    />
                 </View>
                 <View style={styles.passbox}>
                     <Text style={styles.passtext}>Password</Text>
-                    <TextInput />
+                    <TextInput
+                    value={password}
+                    onChangeText={setPassword}
+                    secureTextEntry
+                     />
                 </View>
                 <View>
                     <TouchableOpacity onPress={() => navigate('Page1')} >
@@ -41,7 +50,7 @@ const Page2 = () => {
                     </TouchableOpacity>
                 </View>
                 <View>
-                    <TouchableOpacity onPress={()=>navigate('SignUp')}>
+                    <TouchableOpacity onPress={() => navigate('SignUp')}>
                         <Text style={styles.signup}>SIGN UP</Text>
                     </TouchableOpacity>
                 </View>
@@ -131,10 +140,10 @@ const styles = StyleSheet.create({
         textAlign: "center",
         marginTop: 10
     },
-    signup:{
-        fontSize:18,
-        fontFamily:"NunitoSansSemiBold",
-        textAlign:"center",
-        marginTop:30
+    signup: {
+        fontSize: 18,
+        fontFamily: "NunitoSansSemiBold",
+        textAlign: "center",
+        marginTop: 30
     }
 })
