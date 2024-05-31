@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF"
   },
   mainbar: {
-    marginTop: "10%",
+    // marginTop: "10%",
     height: 70,
     width: "100%",
     flexDirection: "row",

@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   coverimage: {
     width: 364,
-    height: 500,
+    height: 450,
     marginLeft: 20,
     borderBottomLeftRadius: 100
   },

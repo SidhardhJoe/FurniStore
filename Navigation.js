@@ -19,6 +19,7 @@ import ChairPage from './Screen/TopBarIconPages/ChairPage';
 import LampPage from './Screen/TopBarIconPages/LampPage';
 import SofaPage from './Screen/TopBarIconPages/SofaPage';
 import TablePage from './Screen/TopBarIconPages/TablePage';
+import useAuth from './hooks/useAuth';
 
 
 const Stack = createNativeStackNavigator();
@@ -34,41 +35,48 @@ const LoadFonts = () => {
   })
 }
 
-function TabScreen() {
-  return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Page1" component={Page1} />
-      <Stack.Screen name='Page2' component={Page2} />
-      <Stack.Screen name='SignUp' component={Signup} />
-      <Stack.Screen name='BottomNav' component={BottomNav} />
-      <Stack.Screen name='SearchPage' component={SearchPage} />
-      <Stack.Screen name='CartPage' component={CartPage} />
-      <Stack.Screen name='OrderPage' component={OrderPage}/>
-      <Stack.Screen name='PaymentPage' component={PaymentPage}/>
-      <Stack.Screen name='ReviewPage' component={ReviewPage}/>
-      <Stack.Screen name='SettingsPage' component={SettingsPage}/>
-      <Stack.Screen name='ShippingPage' component={ShippingPage}/>
-      <Stack.Screen name='ProductPage' component={ProductPage}/>
-      <Stack.Screen name='BedPage' component={BedPage}/>
-      <Stack.Screen name='ChairPage' component={ChairPage}/>
-      <Stack.Screen name='LampPage' component={LampPage}/>
-      <Stack.Screen name='SofaPage' component={SofaPage}/>
-      <Stack.Screen name='TablePage' component={TablePage}/>
-    </Stack.Navigator>
-  );
-}
 
 const Navigation = () => {
   const [loaded] = LoadFonts();
+  const { user } = useAuth();
 
   if (!loaded) {
     return null;
+  } if (user) {
+    return (
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='BottomNav'>
+
+          <Stack.Screen name='BottomNav' component={BottomNav} />
+          <Stack.Screen name='SearchPage' component={SearchPage} />
+          <Stack.Screen name='CartPage' component={CartPage} />
+          <Stack.Screen name='OrderPage' component={OrderPage} />
+          <Stack.Screen name='PaymentPage' component={PaymentPage} />
+          <Stack.Screen name='ReviewPage' component={ReviewPage} />
+          <Stack.Screen name='SettingsPage' component={SettingsPage} />
+          <Stack.Screen name='ShippingPage' component={ShippingPage} />
+          <Stack.Screen name='ProductPage' component={ProductPage} />
+          <Stack.Screen name='BedPage' component={BedPage} />
+          <Stack.Screen name='ChairPage' component={ChairPage} />
+          <Stack.Screen name='LampPage' component={LampPage} />
+          <Stack.Screen name='SofaPage' component={SofaPage} />
+          <Stack.Screen name='TablePage' component={TablePage} />
+
+        </Stack.Navigator>
+      </NavigationContainer>
+    )
+  } else {
+    return (
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Page2'>
+          <Stack.Screen name="Page1" component={Page1} />
+          <Stack.Screen name='Page2' component={Page2} />
+          <Stack.Screen name='SignUp' component={Signup} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    );
   }
-  return (
-    <NavigationContainer>
-      <TabScreen />
-    </NavigationContainer>
-  );
+
 };
 
 export default Navigation;

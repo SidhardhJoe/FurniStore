@@ -1,11 +1,24 @@
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, {useState} from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { useNavigation } from '@react-navigation/native';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../config/Firebase';
 
 
 const Page2 = () => {
     const { navigate } = useNavigation();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const handleSubmit = async () => {
+        if (email && password) {
+            try {
+                await signInWithEmailAndPassword(auth, email, password);
+            } catch (err) {
+                console.log('got error: ', err.message);
+            }
+        }
+    }
     return (
         <View style={styles.container}>
             <StatusBar style="dark" />
@@ -25,6 +38,8 @@ const Page2 = () => {
                     <Text style={styles.emailtext}>Email</Text>
 
                     <TextInput
+                    value={email}
+                    onChangeText={value => setEmail(value)}
                     autoCapitalize='none'
 
                     />
@@ -32,6 +47,8 @@ const Page2 = () => {
                 <View style={styles.passbox}>
                     <Text style={styles.passtext}>Password</Text>
                     <TextInput
+                    value={password}
+                    onChangeText={value=>setPassword(value)}
                     secureTextEntry
                      />
                 </View>
@@ -41,7 +58,7 @@ const Page2 = () => {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.login}>
-                    <TouchableOpacity onPress={() => navigate('BottomNav')}>
+                    <TouchableOpacity onPress={handleSubmit}>
                         <Text style={styles.logintext}>Log In</Text>
                     </TouchableOpacity>
                 </View>

@@ -1,13 +1,40 @@
 import { StyleSheet, Text, View, Image, TextInput, KeyboardAvoidingView, Platform } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
+import { createUserWithEmailAndPassword, validatePassword } from 'firebase/auth';
+import { auth } from '../config/Firebase';
 
 
-const Signup = ({ email, setEmail, password, setPassword, isLogin, setIsLogin, handleAuthentication }) => {
+const Signup = () => {
     const { navigate } = useNavigation();
     const keyboardVerticalOffset = Platform.OS === 'android' ? 100 : 0;
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = async () => {
+        if (email && password) {
+            try {
+                await createUserWithEmailAndPassword(auth, email, password);
+            } catch (err) {
+                console.log('got error: ', err.message);
+            }
+        }
+    }
+    // const buttonPress = () => {
+    //     navigate('BottomNav')
+    // }
+
+    // const twoActions=()=>{
+    //     handleSubmit();
+    //     buttonPress();
+    // }
+
+
+
+
+
     return (
         < KeyboardAvoidingView style={styles.container}
             behavior='position'
@@ -30,7 +57,7 @@ const Signup = ({ email, setEmail, password, setPassword, isLogin, setIsLogin, h
                     <Text style={styles.nametext}>Email</Text>
                     <TextInput
                         value={email}
-                        onChangeText={setEmail}
+                        onChangeText={value => setEmail(value)}
                         autoCapitalize='none'
                     />
                 </View>
@@ -38,7 +65,7 @@ const Signup = ({ email, setEmail, password, setPassword, isLogin, setIsLogin, h
                     <Text style={styles.nametext}>Password</Text>
                     <TextInput
                         value={password}
-                        onChangeText={setPassword}
+                        onChangeText={value => setPassword(value)}
                         secureTextEntry />
                 </View>
                 <View style={styles.namebox}
@@ -51,7 +78,7 @@ const Signup = ({ email, setEmail, password, setPassword, isLogin, setIsLogin, h
                 </View>
             </View>
             <View style={styles.signupbox2}>
-                <TouchableOpacity onPress={() => navigate('BottomNav')}>
+                <TouchableOpacity onPress={handleSubmit}>
                     <Text style={styles.signuptext1}>Sign Up</Text>
                 </TouchableOpacity>
             </View>

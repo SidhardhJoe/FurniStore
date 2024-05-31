@@ -2,9 +2,14 @@ import { StyleSheet, Text, View, StatusBar, ScrollView, Image } from 'react-nati
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { TouchableOpacity } from 'react-native'
+import { signOut } from 'firebase/auth'
+import { auth } from '../config/Firebase'
 
 const Profile = () => {
   const { navigate } = useNavigation();
+  const handleLogout=async()=>{
+    await signOut(auth);
+  }
   return (
     <ScrollView style={styles.container}>
       <StatusBar style="white" />
@@ -13,7 +18,7 @@ const Profile = () => {
           <Image source={require("../Icons/Search.png")} style={styles.search} />
         </TouchableOpacity>
         <Text style={styles.text1}>Profile</Text>
-        <TouchableOpacity onPress={() => navigate('Page2')}>
+        <TouchableOpacity onPress={handleLogout}>
           <Image source={require("../Icons/Logout.png")} style={styles.logout} />
         </TouchableOpacity>
       </View>
@@ -100,7 +105,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF"
   },
   topview: {
-    marginTop: "10%",
+    // marginTop: "10%",
     flexDirection: "row",
     justifyContent: "space-between",
   },
