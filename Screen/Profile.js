@@ -1,15 +1,18 @@
 import { StyleSheet, Text, View, StatusBar, ScrollView, Image } from 'react-native'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { TouchableOpacity } from 'react-native'
 import { signOut } from 'firebase/auth'
-import { auth } from '../config/Firebase'
+import { auth, FirebaseAuth } from '../config/Firebase'
+
+
 
 const Profile = () => {
   const { navigate } = useNavigation();
   const handleLogout=async()=>{
     await signOut(auth);
   }
+
   return (
     <ScrollView style={styles.container}>
       <StatusBar style="white" />
@@ -32,7 +35,7 @@ const Profile = () => {
           <TouchableOpacity onPress={()=>navigate('SettingsPage')}>
           <Text style={styles.name1}>Christo Kurian</Text>
           </TouchableOpacity>
-          <Text style={styles.name2}>ckking@gmail.com</Text>
+          <Text style={styles.name2}>sidhardhjoe@gmail.com</Text>
         </View>
       </View>
       <View style={styles.minibox}>
