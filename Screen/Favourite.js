@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, StatusBar, Image } from 'react-native'
+import { StyleSheet, Text, View, StatusBar, Image, ScrollView } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native';
@@ -10,19 +10,39 @@ const Favourite = () => {
     <View style={styles.container}>
       <StatusBar style="dark" />
       <View style={styles.view1}>
-        <TouchableOpacity onPress={()=>navigate('SearchPage')}>
+        <TouchableOpacity onPress={() => navigate('SearchPage')}>
           <Image source={require("../Icons/Search.png")} style={styles.searchicon} />
         </TouchableOpacity>
         <Text style={styles.headertext}>Favourites</Text>
-        <TouchableOpacity onPress={()=>navigate('CartPage')}>
+        <TouchableOpacity onPress={() => navigate('CartPage')}>
           <Image source={require("../Icons/Cart.png")} style={styles.carticon} />
         </TouchableOpacity>
       </View>
-        <FavItemComponent/>
-        <FavItemComponent/>
-        <FavItemComponent/>
-        <FavItemComponent/>
-      
+      <ScrollView>
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+      </ScrollView>
+
+      <View style={styles.altmcbox}>
+        <TouchableOpacity onPress={()=>navigate('CartPage')}>
+        <Text style={styles.altmctext}>Add to cart</Text>
+        </TouchableOpacity>
+      </View>
+
+
     </View>
   )
 }
@@ -52,5 +72,23 @@ const styles = StyleSheet.create({
     height: 25,
     width: 25,
     marginRight: 10
-  }
+  },
+  altmcbox: {
+    height: 50,
+    width: 323,
+    backgroundColor: "black",
+    marginLeft: 19,
+    marginBottom: 20,
+    borderRadius: 10,
+  },
+  altmctext: {
+    color: "white",
+    textAlign: "center",
+    fontSize: 18,
+    marginTop: 10,
+    fontFamily: "NunitoSansSemiBold"
+  },
+  // outerview:{
+  //   width:"auto"
+  // }
 })
