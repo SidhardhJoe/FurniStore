@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native';
@@ -11,6 +11,7 @@ const Home = () => {
   const { navigate } = useNavigation();
   return (
     <ScrollView style={styles.container}>
+      <StatusBar style="light" />
       {/* {console.log(details)} */}
       <View style={styles.mainbar}>
         <TouchableOpacity onPress={() => navigate('SearchPage')}>

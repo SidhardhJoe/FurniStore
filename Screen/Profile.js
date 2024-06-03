@@ -32,7 +32,7 @@ const Profile = () => {
           </TouchableOpacity>
         </View>
         <View style={styles.insidetext}>
-          <TouchableOpacity onPress={()=>navigate('SettingsPage')}>
+          <TouchableOpacity onPress={()=>navigate('CongratsPage')}>
           <Text style={styles.name1}>Christo Kurian</Text>
           </TouchableOpacity>
           <Text style={styles.name2}>sidhardhjoe@gmail.com</Text>

@@ -19,7 +19,9 @@ import ChairPage from './Screen/TopBarIconPages/ChairPage';
 import LampPage from './Screen/TopBarIconPages/LampPage';
 import SofaPage from './Screen/TopBarIconPages/SofaPage';
 import TablePage from './Screen/TopBarIconPages/TablePage';
+import CongratsPage from './Screen/CongratsPage';
 import useAuth from './hooks/useAuth';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -61,6 +63,7 @@ const Navigation = () => {
           <Stack.Screen name='LampPage' component={LampPage} />
           <Stack.Screen name='SofaPage' component={SofaPage} />
           <Stack.Screen name='TablePage' component={TablePage} />
+          <Stack.Screen name='CongratsPage' component={CongratsPage}/>
 
         </Stack.Navigator>
       </NavigationContainer>
