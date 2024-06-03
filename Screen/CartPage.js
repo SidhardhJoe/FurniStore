@@ -9,8 +9,8 @@ const CartPage = () => {
     <View style={styles.container}>
 
       <View style={styles.topbox}>
-        <TouchableOpacity onPress={()=>navigate('Favourite')}>
-        <Image style={styles.backicon} source={require("../Icons/back1.png")}/>
+        <TouchableOpacity onPress={() => navigate('Favourite')}>
+          <Image style={styles.backicon} source={require("../Icons/back1.png")} />
         </TouchableOpacity>
         <Text style={styles.txtin} >My cart</Text>
       </View>
@@ -18,10 +18,10 @@ const CartPage = () => {
 
 
       <ScrollView style={styles.cbox}>
-      <FavItemComponent/>
-      <FavItemComponent/>
-      <FavItemComponent/>
- 
+        <FavItemComponent />
+        <FavItemComponent />
+        <FavItemComponent />
+
       </ScrollView>
 
       <View style={styles.ttlbox}>
@@ -29,7 +29,9 @@ const CartPage = () => {
         <Text style={styles.txtmoney}>$150.00</Text>
       </View>
       <View style={styles.checkoutbox}>
-        <Text style={styles.checkouttxt}>Check Out</Text>
+        <TouchableOpacity onPress={()=>navigate('CheckoutPage')}>
+          <Text style={styles.checkouttxt}>Check Out</Text>
+        </TouchableOpacity>
       </View>
     </View>
   )
@@ -38,32 +40,32 @@ const CartPage = () => {
 export default CartPage
 
 const styles = StyleSheet.create({
-  container:{
-    flex:1,
-    backgroundColor:"white"
+  container: {
+    flex: 1,
+    backgroundColor: "white"
   },
-  topbox:{
-    flexDirection:"row",
-    marginTop:10
+  topbox: {
+    flexDirection: "row",
+    marginTop: 10
   },
-  backicon:{
-    height:25,
-    width:25,
-    marginLeft:10,
-    marginTop:4
+  backicon: {
+    height: 25,
+    width: 25,
+    marginLeft: 10,
+    marginTop: 4
   },
-  txtin:{
-    marginLeft:110,
-    fontFamily:"MerriweatherBold",
-    fontSize:20
+  txtin: {
+    marginLeft: 110,
+    fontFamily: "MerriweatherBold",
+    fontSize: 20
   },
-  cbox:{
-    marginTop:10
+  cbox: {
+    marginTop: 10
   },
-  ttlbox:{
-    flexDirection:"row"
+  ttlbox: {
+    flexDirection: "row"
   },
-  checkoutbox:{
+  checkoutbox: {
     height: 50,
     width: 300,
     backgroundColor: "black",
@@ -71,24 +73,24 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     borderRadius: 10,
   },
-  checkouttxt:{
-    color:"white",
-    fontFamily:"NunitoSansSemiBold",
-    textAlign:"center",
-    fontSize:18,
-    marginTop:10
+  checkouttxt: {
+    color: "white",
+    fontFamily: "NunitoSansSemiBold",
+    textAlign: "center",
+    fontSize: 18,
+    marginTop: 10
   },
-  txttotal:{
-    fontFamily:"NunitoSansSemiBold",
-    fontSize:20,
-    color:"#808080",
-    marginBottom:10,
-    marginLeft:27
+  txttotal: {
+    fontFamily: "NunitoSansSemiBold",
+    fontSize: 20,
+    color: "#808080",
+    marginBottom: 10,
+    marginLeft: 27
   },
-  txtmoney:{
-    fontFamily:"NunitoSansSemiBold",
-    fontSize:18,
-    marginLeft:160,
-    marginTop:5
+  txtmoney: {
+    fontFamily: "NunitoSansSemiBold",
+    fontSize: 18,
+    marginLeft: 160,
+    marginTop: 5
   }
 })
