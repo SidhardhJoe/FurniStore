@@ -3,24 +3,27 @@ import React, { useState, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { TouchableOpacity } from 'react-native'
 import { signOut } from 'firebase/auth'
-import { auth, FirebaseAuth } from '../config/Firebase'
+import { auth, } from '../config/Firebase'
+import useAuth from '../hooks/useAuth'
 
 
 
 const Profile = () => {
   const { navigate } = useNavigation();
+  const {user} = useAuth()
   const handleLogout=async()=>{
     await signOut(auth);
   }
 
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
       <StatusBar style="white" />
       <View style={styles.topview}>
         <TouchableOpacity onPress={() => navigate('SearchPage')}>
           <Image source={require("../Icons/Search.png")} style={styles.search} />
         </TouchableOpacity>
         <Text style={styles.text1}>Profile</Text>
+
         <TouchableOpacity onPress={handleLogout}>
           <Image source={require("../Icons/Logout.png")} style={styles.logout} />
         </TouchableOpacity>
@@ -28,14 +31,14 @@ const Profile = () => {
       <View style={styles.namebox} >
         <View style={styles.pp}>
           <TouchableOpacity onPress={()=>navigate('SettingsPage')}>
-          <Image source={require("../Images/pp.png")} />
+          <Image source={require("../Images/pp.png")} style={styles.img1}/>
           </TouchableOpacity>
         </View>
         <View style={styles.insidetext}>
           <TouchableOpacity onPress={()=>navigate('CongratsPage')}>
           <Text style={styles.name1}>Christo Kurian</Text>
           </TouchableOpacity>
-          <Text style={styles.name2}>sidhardhjoe@gmail.com</Text>
+          <Text style={styles.name2}>{user?.email}</Text>
         </View>
       </View>
       <View style={styles.minibox}>
@@ -51,6 +54,10 @@ const Profile = () => {
           </View>
           </TouchableOpacity>
         </View>
+
+
+
+
         <View >
           <TouchableOpacity style={styles.orderbox} onPress={()=>navigate('ShippingPage')}>
           <View style={styles.miniboxinside}>
@@ -96,7 +103,7 @@ const Profile = () => {
           </TouchableOpacity>
         </View>
       </View>
-    </ScrollView>
+    </View>
   )
 }
 
@@ -113,19 +120,19 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   search: {
-    height: 26,
-    width: 26,
+    height: 25,
+    width: 25,
     marginLeft: 12,
     marginTop: 25
   },
   text1: {
-    fontFamily: "MerriweatherRegular",
+    fontFamily: "MerriweatherBold",
     fontSize: 20,
     marginTop: "6%"
   },
   logout: {
-    height: 26,
-    width: 26,
+    height: 25,
+    width: 25,
     marginTop: 25,
     marginRight: 10
   },
@@ -137,7 +144,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   insidetext: {
-    marginTop: 50,
+    marginTop: 40,
     marginLeft: 20
   },
   name1: {
@@ -154,9 +161,9 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   orderbox: {
-    height: 100,
+    height: 75,
     backgroundColor: "#DEDEDE",
-    width: 350,
+    width: 310,
     marginLeft: 27,
     marginBottom: 18,
     borderRadius: 10,
@@ -165,18 +172,22 @@ const styles = StyleSheet.create({
   },
   text3:{
     fontFamily:"NunitoSansSemiBold",
-    fontSize:20
+    fontSize:18
   },
   text31:{
     fontFamily:"NunitoSansRegular",
-    fontSize:16
+    fontSize:14
   },
   miniboxinside:{
-    marginTop:20,
+    marginTop:15,
     marginLeft:15
   },
   forwardicon:{
     marginRight:20,
     marginTop:40
+  },
+  img1:{
+    height:60,
+    width:60
   }
 })

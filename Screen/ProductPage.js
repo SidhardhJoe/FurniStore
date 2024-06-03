@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   coverimage: {
     width: 364,
-    height: 450,
+    height: 350,
     marginLeft: 20,
     borderBottomLeftRadius: 100
   },
@@ -64,26 +64,28 @@ const styles = StyleSheet.create({
   },
   title1: {
     fontFamily: "GelasioRegular",
-    fontSize: 30,
+    fontSize: 24,
     marginLeft: 20,
     marginTop: 10
   },
   title2: {
     fontFamily: "NunitoSansSemiBold",
-    fontSize: 32,
+    fontSize: 28,
     marginLeft: 20,
     marginTop: 10
   },
   star: {
     marginTop: 10,
-    marginLeft: 20
+    marginLeft: 20,
+    height:15,
+    width:15
   },
   reviewbox: {
     flexDirection: "row",
   },
   text3: {
     fontFamily: "NunitoSansSemiBold",
-    fontSize: 18,
+    fontSize: 16,
     marginTop: 7,
     marginLeft: 10
   },
@@ -94,7 +96,7 @@ const styles = StyleSheet.create({
     marginLeft: 15
   },
   descbox: {
-    width: 350,
+    width: 310,
     marginLeft: 20,
     marginTop: 20
   },
@@ -105,7 +107,7 @@ const styles = StyleSheet.create({
   },
   addtocart: {
     height: 60,
-    width: 280,
+    width: 240,
     backgroundColor: "black",
     borderRadius: 10
   },
@@ -122,6 +124,7 @@ const styles = StyleSheet.create({
     marginTop: 13
   },
   favsicon: {
-    marginRight: 30
+    marginRight: 20,
+    marginLeft:10,
   }
 })

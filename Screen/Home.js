@@ -11,7 +11,7 @@ const Home = () => {
   const { navigate } = useNavigation();
   return (
     <ScrollView style={styles.container}>
-      <StatusBar style="light" />
+      <StatusBar style="light-content" />
       {/* {console.log(details)} */}
       <View style={styles.mainbar}>
         <TouchableOpacity onPress={() => navigate('SearchPage')}>
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     height: 70,
     width: "100%",
     flexDirection: "row",
-    gap: 90,
+    gap: 70,
   },
   search: {
     height: 25,
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     marginLeft: 15,
     marginTop: 20,
-    gap:20
+    gap:12
   },
   bottomtext:{
     fontFamily:"NunitoSansRegular",

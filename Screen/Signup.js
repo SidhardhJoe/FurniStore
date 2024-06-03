@@ -39,7 +39,7 @@ const Signup = () => {
         < KeyboardAvoidingView style={styles.container}
             behavior='position'
             keyboardVerticalOffset={keyboardVerticalOffset} >
-            <StatusBar style="dark" />
+            <StatusBar style="light" />
             <View style={styles.topview}>
                 <Image source={require("../Images/Rectangle50.png")} style={styles.line1} />
                 <Image source={require("../Images/Group.png")} />
@@ -66,14 +66,6 @@ const Signup = () => {
                     <TextInput
                         value={password}
                         onChangeText={value => setPassword(value)}
-                        secureTextEntry />
-                </View>
-                <View style={styles.namebox}
-                >
-                    <Text style={styles.nametext}>Confirm Password</Text>
-                    <TextInput
-                        value={password}
-                        onChangeText={setPassword}
                         secureTextEntry />
                 </View>
             </View>
@@ -106,9 +98,9 @@ const styles = StyleSheet.create({
     topview: {
         display: "flex",
         flexDirection: "row",
-        marginTop: 90,
+        marginTop: 50,
         justifyContent: "center",
-        gap: 40
+        gap: 20
     },
     line1: {
         marginTop: "8%"
@@ -134,11 +126,11 @@ const styles = StyleSheet.create({
     },
     signupbox2: {
         height: 50,
-        width: 285,
+        width: 200,
         backgroundColor: "black",
-        marginLeft: 60,
         borderRadius: 10,
-        marginTop: 50
+        marginLeft: 75,
+        marginTop: 30
     },
     signuptext1: {
         textAlign: "center",

@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native'
-import React, {useState} from 'react'
+import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native'
+import React, { useState } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { useNavigation } from '@react-navigation/native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -8,6 +8,7 @@ import { auth } from '../config/Firebase';
 
 const Page2 = () => {
     const { navigate } = useNavigation();
+    const keyboardVerticalOffset = Platform.OS === 'android' ? 100 : 0;
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const handleSubmit = async () => {
@@ -20,7 +21,8 @@ const Page2 = () => {
         }
     }
     return (
-        <View style={styles.container}>
+        <KeyboardAvoidingView style={styles.container} behavior='position'
+            keyboardVerticalOffset={keyboardVerticalOffset} >
             <StatusBar style="dark" />
             <View style={styles.topview}>
                 <Image source={require("../Images/Rectangle50.png")} style={styles.line1} />
@@ -38,19 +40,19 @@ const Page2 = () => {
                     <Text style={styles.emailtext}>Email</Text>
 
                     <TextInput
-                    value={email}
-                    onChangeText={value => setEmail(value)}
-                    autoCapitalize='none'
+                        value={email}
+                        onChangeText={value => setEmail(value)}
+                        autoCapitalize='none'
 
                     />
                 </View>
                 <View style={styles.passbox}>
                     <Text style={styles.passtext}>Password</Text>
                     <TextInput
-                    value={password}
-                    onChangeText={value=>setPassword(value)}
-                    secureTextEntry
-                     />
+                        value={password}
+                        onChangeText={value => setPassword(value)}
+                        secureTextEntry
+                    />
                 </View>
                 <View>
                     <TouchableOpacity onPress={() => navigate('Page1')} >
@@ -69,7 +71,7 @@ const Page2 = () => {
                 </View>
 
             </View>
-        </View>
+        </KeyboardAvoidingView>
     )
 }
 
@@ -83,9 +85,9 @@ const styles = StyleSheet.create({
     topview: {
         display: "flex",
         flexDirection: "row",
-        marginTop: 90,
+        marginTop: 50,
         justifyContent: "center",
-        gap: 40
+        gap: 20
     },
     line1: {
         marginTop: "8%"
@@ -94,7 +96,7 @@ const styles = StyleSheet.create({
         fontFamily: "GelasioRegular",
         fontSize: 30,
         color: "#606060",
-        marginTop: 50,
+        marginTop: 30,
         marginLeft: 30
     },
     welcomeback: {
@@ -136,14 +138,14 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontFamily: "NunitoSansSemiBold",
         textAlign: "center",
-        marginTop: 40
+        marginTop: 30
     },
     login: {
         height: 50,
-        width: 285,
+        width: 200,
         backgroundColor: "black",
         borderRadius: 10,
-        marginLeft: 60,
+        marginLeft: 75,
         marginTop: 30
     },
     logintext: {

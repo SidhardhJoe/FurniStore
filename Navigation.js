@@ -48,7 +48,6 @@ const Navigation = () => {
     return (
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='BottomNav'>
-
           <Stack.Screen name='BottomNav' component={BottomNav} />
           <Stack.Screen name='SearchPage' component={SearchPage} />
           <Stack.Screen name='CartPage' component={CartPage} />
@@ -64,7 +63,6 @@ const Navigation = () => {
           <Stack.Screen name='SofaPage' component={SofaPage} />
           <Stack.Screen name='TablePage' component={TablePage} />
           <Stack.Screen name='CongratsPage' component={CongratsPage}/>
-
         </Stack.Navigator>
       </NavigationContainer>
     )

@@ -28,8 +28,8 @@ const styles = StyleSheet.create({
     backgroundColor: "white"
   },
   outline: {
-    height: 200,
-    width: 180,
+    height: 180,
+    width: 150,
     borderRadius: 10
   },
   box: {

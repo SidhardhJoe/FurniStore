@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   view1: {
     flexDirection: "row",
     justifyContent: "space-between",
-    // marginTop: "15%"
+    marginTop: "5%"
   },
   headertext: {
     fontFamily: "MerriweatherBold",
