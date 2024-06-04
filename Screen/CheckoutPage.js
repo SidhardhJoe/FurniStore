@@ -14,20 +14,25 @@ const CheckoutPage = () => {
             </View>
             <View style={styles.box2}>
                 <Text style={styles.sat}>Shipping Address</Text>
+                <TouchableOpacity onPress={()=>navigate('AddressPage')}>
                 <Image style={styles.editicon} source={require("../Icons/edit.png")} />
-
+                </TouchableOpacity>
             </View>
             <View>
+                <TouchableOpacity onPress={()=>navigate('AddressPage')}>
                 <View style={styles.box3}>
                     <Text style={styles.boxtxt}>Christo Kurian</Text>
                 </View>
                 <View style={styles.box4}>
                     <Text style={styles.box4txt}>25 rue Robert Latouche, Nice, 06200, Côte D’azur, France</Text>
                 </View>
+                </TouchableOpacity>
             </View>
             <View style={styles.box2}>
                 <Text style={styles.sat}>Payment</Text>
+                <TouchableOpacity onPress={()=>navigate('PaymentPage')}>
                 <Image style={styles.editicon} source={require("../Icons/edit.png")} />
+                </TouchableOpacity>
             </View>
             <View >
                 <TouchableOpacity style={styles.box5} onPress={() => navigate('PaymentPage')}>
@@ -38,7 +43,9 @@ const CheckoutPage = () => {
             <View>
                 <View style={styles.box2}>
                     <Text style={styles.sat}>Delivery Method</Text>
+                    <TouchableOpacity onPress={()=>navigate('ShippingPage')}>
                     <Image style={styles.editicon} source={require("../Icons/edit.png")} />
+                    </TouchableOpacity>
                 </View>
                 <View >
                     <TouchableOpacity style={styles.box5} onPress={()=>navigate('ShippingPage')}>

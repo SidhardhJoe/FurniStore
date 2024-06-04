@@ -22,6 +22,7 @@ import TablePage from './Screen/TopBarIconPages/TablePage';
 import CongratsPage from './Screen/CongratsPage';
 import CheckoutPage from './Screen/CheckoutPage';
 import useAuth from './hooks/useAuth';
+import AddressPage from './Screen/AddressPage';
 
 
 
@@ -65,6 +66,7 @@ const Navigation = () => {
           <Stack.Screen name='TablePage' component={TablePage} />
           <Stack.Screen name='CongratsPage' component={CongratsPage}/>
           <Stack.Screen name='CheckoutPage' component={CheckoutPage}/>
+          <Stack.Screen name='AddressPage' component={AddressPage} />
         </Stack.Navigator>
       </NavigationContainer>
     )
