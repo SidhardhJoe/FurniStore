@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <ScrollView style={styles.container}>
       <StatusBar style="light-content" />
-      {/* {console.log(details)} */}
+      {console.log(details)}
       <View style={styles.mainbar}>
         <TouchableOpacity onPress={() => navigate('SearchPage')}>
           <Image style={styles.search} source={require("../Icons/Search.png")} />
@@ -59,7 +59,6 @@ const Home = () => {
       </View>
       <View style={{flexDirection:"row"}}>
         <ItemComponent/>
-        <ItemComponent/>
       </View>
 
 
@@ -71,7 +70,7 @@ export default Home
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     backgroundColor: "#FFFFFF"
   },
   mainbar: {

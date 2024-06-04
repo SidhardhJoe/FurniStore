@@ -2,12 +2,13 @@ import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'rea
 import { useNavigation } from '@react-navigation/native';
 import React from 'react'
 
-const CheckoutPage = () => {
+const CheckoutPage = ({route}) => {
     const { navigate } = useNavigation();
+    const{details}=route.params
     return (
         <View style={styles.container}>
             <View style={styles.box1}>
-                <TouchableOpacity onPress={() => navigate('CartPage')}>
+                <TouchableOpacity onPress={() => navigate('CartPage', {details})}>
                     <Image source={require("../Icons/back1.png")} style={styles.backicon} />
                 </TouchableOpacity>
                 <Text style={styles.carttext}>Check Out</Text>

@@ -4,8 +4,9 @@ import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 
 
-const ProductPage = () => {
+const ProductPage = ({route}) => {
   const { navigate } = useNavigation();
+  const{details}=route.params
   return (
     <View style={styles.container}>
       <View>
@@ -13,9 +14,9 @@ const ProductPage = () => {
           <TouchableOpacity onPress={() => navigate('BottomNav')}>
             <Image source={require("../Icons/back.png")} style={styles.back} />
           </TouchableOpacity>
-          <Image source={require("../Listing/Bed/Bed1.png")} style={styles.coverimage} />
+          <Image source={{uri:details?.image}} style={styles.coverimage} />
         </View>
-        <Text style={styles.title1}>Simple Bed Cover</Text>
+        <Text style={styles.title1}>{details?.name}</Text>
         <Text style={styles.title2}>$ 50.00</Text>
         <View style={styles.reviewbox}>
           <Image source={require(".././Icons/star.png")} style={styles.star} />
@@ -36,7 +37,7 @@ const ProductPage = () => {
           <Image source={require("../Icons/Fav.png")} style={styles.favsicon} />
         </TouchableOpacity>
         <View style={styles.addtocart}>
-          <TouchableOpacity onPress={() => navigate('CartPage')}>
+          <TouchableOpacity onPress={() => navigate('CartPage', {details})}>
             <Text style={styles.atct}>Add To Cart</Text>
           </TouchableOpacity>
         </View>

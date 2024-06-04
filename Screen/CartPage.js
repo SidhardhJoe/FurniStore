@@ -3,13 +3,14 @@ import { useNavigation } from '@react-navigation/native'
 import React from 'react'
 import FavItemComponent from './Component/FavItemComponent'
 
-const CartPage = () => {
+const CartPage = ({route}) => {
+  const{details}=route.params
   const { navigate } = useNavigation();
   return (
     <View style={styles.container}>
 
       <View style={styles.topbox}>
-        <TouchableOpacity onPress={() => navigate('Favourite')}>
+        <TouchableOpacity onPress={() => navigate('ProductPage',{details})}>
           <Image style={styles.backicon} source={require("../Icons/back1.png")} />
         </TouchableOpacity>
         <Text style={styles.txtin} >My cart</Text>
@@ -29,7 +30,7 @@ const CartPage = () => {
         <Text style={styles.txtmoney}>$150.00</Text>
       </View>
       <View style={styles.checkoutbox}>
-        <TouchableOpacity onPress={()=>navigate('CheckoutPage')}>
+        <TouchableOpacity onPress={()=>navigate('CheckoutPage', {details})}>
           <Text style={styles.checkouttxt}>Check Out</Text>
         </TouchableOpacity>
       </View>

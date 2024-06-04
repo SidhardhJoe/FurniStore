@@ -2,20 +2,24 @@ import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+import { details } from '../../Data/Data'
 
 const ItemComponent = () => {
   const { navigate } = useNavigation();
   return (
     <View style={styles.container}>
-      <View style={styles.box}>
-        <TouchableOpacity onPress={()=>navigate('ProductPage')}>
-          <View>
-            <Image source={require('../../Listing/Bed/Bed1.png')} style={styles.outline} />
-          </View>
-          <Text style={styles.text1}>Simple Bed Cover</Text>
-          <Text style={styles.text2}>$ 50.00</Text>
-        </TouchableOpacity>
-      </View>
+      {details?.map((details, index) => {
+        return (
+          <View key={index} style={styles.box}>
+            <TouchableOpacity onPress={() => navigate('ProductPage', { details })}>
+              <View>
+                <Image source={{ uri: details.image }} style={styles.outline} />
+              </View>
+              <Text style={styles.text1}>{details.name}</Text>
+              <Text style={styles.text2}>$ 50.00</Text>
+            </TouchableOpacity>
+          </View>)
+      })}
     </View>
   )
 }
@@ -24,8 +28,10 @@ export default ItemComponent
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "white"
+    // flex: 1,
+    backgroundColor: "white",
+    flexDirection: 'row',
+    flexWrap: 'wrap'
   },
   outline: {
     height: 180,
@@ -33,10 +39,12 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   box: {
-    height: 300,
+    height: 200,
     width: 180,
     marginLeft: 15,
     marginTop: 30,
+    marginBottom:10
+    // backgroundColor:"black"
   },
   text1: {
     fontFamily: "NunitoSansRegular",
