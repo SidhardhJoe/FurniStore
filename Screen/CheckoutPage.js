@@ -7,7 +7,9 @@ const CheckoutPage = () => {
     return (
         <View style={styles.container}>
             <View style={styles.box1}>
-                <Image source={require("../Icons/back1.png")} style={styles.backicon} />
+                <TouchableOpacity onPress={() => navigate('CartPage')}>
+                    <Image source={require("../Icons/back1.png")} style={styles.backicon} />
+                </TouchableOpacity>
                 <Text style={styles.carttext}>Check Out</Text>
             </View>
             <View style={styles.box2}>
@@ -27,18 +29,22 @@ const CheckoutPage = () => {
                 <Text style={styles.sat}>Payment</Text>
                 <Image style={styles.editicon} source={require("../Icons/edit.png")} />
             </View>
-            <View style={styles.box5}>
-                <Image style={styles.cardicon} source={require("../Icons/card.png")} />
-                <Text style={styles.cardtxt}>**** **** **** 2002</Text>
+            <View >
+                <TouchableOpacity style={styles.box5} onPress={() => navigate('PaymentPage')}>
+                    <Image style={styles.cardicon} source={require("../Icons/card.png")} />
+                    <Text style={styles.cardtxt}>**** **** **** 2002</Text>
+                </TouchableOpacity>
             </View>
             <View>
                 <View style={styles.box2}>
                     <Text style={styles.sat}>Delivery Method</Text>
                     <Image style={styles.editicon} source={require("../Icons/edit.png")} />
                 </View>
-                <View style={styles.box5}>
-                    <Image style={styles.dhlicon} source={require("../Icons/dhl.png")} />
-                    <Text style={styles.cardtxt}>Fast (2-3 Days)</Text>
+                <View >
+                    <TouchableOpacity style={styles.box5} onPress={()=>navigate('ShippingPage')}>
+                        <Image style={styles.dhlicon} source={require("../Icons/dhl.png")} />
+                        <Text style={styles.cardtxt}>Fast (2-3 Days)</Text>
+                    </TouchableOpacity>
                 </View>
             </View>
 
@@ -82,7 +88,7 @@ const styles = StyleSheet.create({
         marginLeft: 55,
         marginBottom: 20,
         borderRadius: 10,
-        marginTop:45
+        marginTop: 45
     },
     checkouttext: {
         color: "white",
@@ -160,7 +166,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
         borderRadius: 10,
         flexDirection: "row",
-        marginBottom:10
+        marginBottom: 10
     },
     cardicon: {
         height: 50,
@@ -174,33 +180,33 @@ const styles = StyleSheet.create({
         fontFamily: "NunitoSansSemiBold",
         fontSize: 16
     },
-    dhlicon:{
+    dhlicon: {
         marginLeft: 10,
         marginTop: 5,
-        marginTop:20
+        marginTop: 20
     },
-    costbox:{
+    costbox: {
         height: 150,
         width: 337,
         backgroundColor: "#f5f5f5",
         marginLeft: 30,
         marginTop: 120,
-        borderRadius:10
+        borderRadius: 10
     },
-    desc:{
-        flexDirection:"row",
-        justifyContent:"space-between",
-        marginLeft:20,
-        marginRight:20,
-        marginTop:15,
+    desc: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginLeft: 20,
+        marginRight: 20,
+        marginTop: 15,
     },
-    desctxt:{
-        fontFamily:"NunitoSansRegular",
-        fontSize:18
+    desctxt: {
+        fontFamily: "NunitoSansRegular",
+        fontSize: 18
     },
-    desctxt1:{
-        fontFamily:"NunitoSansSemiBold",
-        fontSize:18
+    desctxt1: {
+        fontFamily: "NunitoSansSemiBold",
+        fontSize: 18
     }
-    
+
 })
