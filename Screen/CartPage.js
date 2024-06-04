@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     marginTop: 4
   },
   txtin: {
-    marginLeft: 110,
+    marginLeft: 130,
     fontFamily: "MerriweatherBold",
     fontSize: 20
   },
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     height: 50,
     width: 300,
     backgroundColor: "black",
-    marginLeft: 27,
+    marginLeft: 56,
     marginBottom: 20,
     borderRadius: 10,
   },
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
   txtmoney: {
     fontFamily: "NunitoSansSemiBold",
     fontSize: 18,
-    marginLeft: 160,
+    marginLeft: 220,
     marginTop: 5
   }
 })

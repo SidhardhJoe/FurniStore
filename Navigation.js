@@ -71,7 +71,7 @@ const Navigation = () => {
   } else {
     return (
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Page2'>
+        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Page1'>
           <Stack.Screen name="Page1" component={Page1} />
           <Stack.Screen name='Page2' component={Page2} />
           <Stack.Screen name='SignUp' component={Signup} />

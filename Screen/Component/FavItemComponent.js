@@ -31,15 +31,15 @@ const styles = StyleSheet.create({
         backgroundColor: "white"
     },
     cover: {
-        height: 85,
-        width: 75,
+        height: 100,
+        width: 100,
         marginTop: 20,
         marginLeft: 20,
         borderRadius: 10
     },
     headers: {
         width: "100%",
-        height: 105,
+        height: 120,
         flexDirection: "row",
 
     },
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     },
     iconset: {
         marginTop: 20,
-        marginLeft: 60
+        marginLeft: 90
     },
     icon1: {
         height: 20,
@@ -66,6 +66,6 @@ const styles = StyleSheet.create({
     icon2: {
         height: 20,
         width: 25,
-        marginTop: 30
+        marginTop: 50
     },
 })

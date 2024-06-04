@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     topview: {
         display: "flex",
         flexDirection: "row",
-        marginTop: 50,
+        marginTop: 90,
         justifyContent: "center",
         gap: 20
     },
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
         width: 200,
         backgroundColor: "black",
         borderRadius: 10,
-        marginLeft: 75,
+        marginLeft: "25%",
         marginTop: 30
     },
     signuptext1: {

@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   },
   outline: {
     height: 180,
-    width: 150,
+    width: 175,
     borderRadius: 10
   },
   box: {

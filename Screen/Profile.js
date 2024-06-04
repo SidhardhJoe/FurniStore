@@ -161,9 +161,9 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   orderbox: {
-    height: 75,
+    height: 100,
     backgroundColor: "#DEDEDE",
-    width: 310,
+    width: 360,
     marginLeft: 27,
     marginBottom: 18,
     borderRadius: 10,
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
     fontSize:14
   },
   miniboxinside:{
-    marginTop:15,
+    marginTop:25,
     marginLeft:15
   },
   forwardicon:{
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
     marginTop:40
   },
   img1:{
-    height:60,
-    width:60
+    height:80,
+    width:80
   }
 })

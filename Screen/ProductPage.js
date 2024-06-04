@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   coverimage: {
     width: 364,
-    height: 350,
+    height: 480,
     marginLeft: 20,
     borderBottomLeftRadius: 100
   },
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   },
   title1: {
     fontFamily: "GelasioRegular",
-    fontSize: 24,
+    fontSize: 26,
     marginLeft: 20,
     marginTop: 10
   },
@@ -96,13 +96,13 @@ const styles = StyleSheet.create({
     marginLeft: 15
   },
   descbox: {
-    width: 310,
+    width: 345,
     marginLeft: 20,
     marginTop: 20
   },
   desctxt: {
     fontFamily: "NunitoSansRegular",
-    fontSize: 14,
+    fontSize: 16,
     textAlign: "justify"
   },
   addtocart: {
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
   lastbar: {
     flexDirection: "row",
     justifyContent: "center",
-    marginTop: 40
+    marginTop: 30
   },
   atct: {
     color: "white",

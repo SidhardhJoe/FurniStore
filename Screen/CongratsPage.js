@@ -43,14 +43,14 @@ const styles = StyleSheet.create({
         fontFamily: "MerriweatherBold",
         textAlign: "center",
         fontSize: 35,
-        marginTop: 70
+        marginTop: 130
     },
     seat: {
-        marginLeft: "22%",
+        marginLeft: "25%",
         marginTop: 20
     },
     checkmark: {
-        marginLeft: "43%"
+        marginLeft: "45%"
     },
     text2: {
         fontFamily: "NunitoSansRegular",
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     },
     textbox: {
         width: "80%",
-        marginLeft: "10%",
+        marginLeft: "15%",
         marginTop: 20
     },
     tyobox: {
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
         height: 50,
         backgroundColor: "black",
         marginTop: 60,
-        marginLeft: 48.5,
+        marginLeft:80,
         borderRadius: 10
     },
     tyotext: {
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
         width: 250,
         height: 50,
         marginTop: 20,
-        marginLeft: 48.5,
+        marginLeft: 80,
         borderRadius: 10,
         borderWidth: 1
     },
