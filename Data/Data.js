@@ -1,9 +1,9 @@
 export const details=[
     
-        {
-            name:"bed1",
-            image:"https://www.ikea.com/in/en/images/products/songesand-bed-frame-with-2-storage-boxes-white__0800861_ph162919_s5.jpg?f=xl"
-        },
+        // {
+        //     name:"bed1",
+        //     image:"https://www.ikea.com/in/en/images/products/songesand-bed-frame-with-2-storage-boxes-white__0800861_ph162919_s5.jpg?f=xl"
+        // },
         {
             name:"bed2",
             image:"https://www.ikea.com/in/en/images/products/grimsbu-bed-frame-grey__1101968_pe866785_s5.jpg?f=xl"

@@ -35,24 +35,25 @@ const styles = StyleSheet.create({
   },
   outline: {
     height: 180,
-    width: 175,
+    width: 155,
     borderRadius: 10
   },
   box: {
     height: 200,
-    width: 180,
+    width: 150,
     marginLeft: 15,
     marginTop: 30,
-    marginBottom:10
+    marginBottom:10,
+    marginRight:15
     // backgroundColor:"black"
   },
   text1: {
-    fontFamily: "NunitoSansRegular",
+    // fontFamily: "NunitoSansRegular",
     fontSize: 16,
     marginTop: 10
   },
   text2: {
     fontSize: 16,
-    fontFamily: "NunitoSansSemiBold"
+    // fontFamily: "NunitoSansSemiBold"
   }
 })

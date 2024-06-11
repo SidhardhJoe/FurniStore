@@ -20,20 +20,7 @@ const Favourite = () => {
       </View>
       <ScrollView>
         <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
-        <FavItemComponent />
+        
       </ScrollView>
 
       <View style={styles.altmcbox}>
@@ -75,7 +62,7 @@ const styles = StyleSheet.create({
   },
   altmcbox: {
     height: 50,
-    width: 323,
+    width: 290,
     backgroundColor: "black",
     marginLeft: "10%",
     marginBottom: 20,

@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   },
   coverimage: {
     width: 364,
-    height: 480,
+    height: 360,
     marginLeft: 20,
     borderBottomLeftRadius: 100
   },
@@ -64,13 +64,13 @@ const styles = StyleSheet.create({
     marginLeft: 20
   },
   title1: {
-    fontFamily: "GelasioRegular",
+    // fontFamily: "GelasioRegular",
     fontSize: 26,
     marginLeft: 20,
     marginTop: 10
   },
   title2: {
-    fontFamily: "NunitoSansSemiBold",
+    // fontFamily: "NunitoSansSemiBold",
     fontSize: 28,
     marginLeft: 20,
     marginTop: 10
@@ -85,24 +85,24 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   text3: {
-    fontFamily: "NunitoSansSemiBold",
+    // fontFamily: "NunitoSansSemiBold",
     fontSize: 16,
     marginTop: 7,
     marginLeft: 10
   },
   text4: {
-    fontFamily: "NunitoSansSemiBold",
+    // fontFamily: "NunitoSansSemiBold",
     fontSize: 14,
     marginTop: 9,
     marginLeft: 15
   },
   descbox: {
-    width: 345,
+    width: 320,
     marginLeft: 20,
     marginTop: 20
   },
   desctxt: {
-    fontFamily: "NunitoSansRegular",
+    // fontFamily: "NunitoSansRegular",
     fontSize: 16,
     textAlign: "justify"
   },
@@ -115,12 +115,12 @@ const styles = StyleSheet.create({
   lastbar: {
     flexDirection: "row",
     justifyContent: "center",
-    marginTop: 30
+    marginTop: 20
   },
   atct: {
     color: "white",
     textAlign: "center",
-    fontFamily: "NunitoSansSemiBold",
+    // fontFamily: "NunitoSansSemiBold",
     fontSize: 20,
     marginTop: 13
   },

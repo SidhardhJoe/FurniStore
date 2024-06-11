@@ -4,6 +4,8 @@ import React from 'react';
 import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 
+
+
 const Page1 = () => {
     const { navigate } = useNavigation();
     return (
@@ -26,7 +28,7 @@ const Page1 = () => {
 
         </ImageBackground>
     );
-}
+        }
 
 export default Page1;
 
@@ -39,15 +41,15 @@ const styles = StyleSheet.create({
         marginTop: "62%",
         color: "#606060",
         marginLeft: "8%",
-        fontFamily: "GelasioRegular"
+        // fontFamily: "GelasioRegular"
     },
     text2: {
         fontSize: 30,
-        fontFamily: "GelasioBold",
+        // fontFamily: "GelasioBold",
         marginLeft: "8%",
     },
     view1: {
-        width: 300,
+        width: 280,
         marginLeft: "15%",
         marginTop: "5%",
         fontSize: 24
@@ -56,7 +58,8 @@ const styles = StyleSheet.create({
         fontSize: 18,
         letterSpacing: 2,
         color: "#808080",
-        fontFamily:"NunitoSansRegular"
+        // fontFamily:"NunitoSansRegular",
+        textAlign:"justify"
     },
     getstarted: {
         height: 54,
@@ -68,10 +71,10 @@ const styles = StyleSheet.create({
     },
     textgetstarted: {
         color: "white",
-        fontFamily: "GelasioRegular",
+        // fontFamily: "GelasioRegular",
         fontSize: 18,
         textAlign: "center",
-        marginTop: "5%"
+        marginTop: "8%"
 
     },
 });

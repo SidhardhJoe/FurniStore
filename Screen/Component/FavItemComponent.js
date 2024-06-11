@@ -1,16 +1,21 @@
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const FavItemComponent = () => {
+const FavItemComponent = ({ alex :details}) => {
+
+  
+
     return (
         <View style={styles.container}>
+
             <View>
+
                 <View style={styles.headers}>
                     <View>
-                        <Image source={require("../../Listing/Bed/Bed1.png")} style={styles.cover} />
+                        <Image source={{ uri: details?.image }} style={styles.cover} />
                     </View>
                     <View style={styles.textinside}>
-                        <Text style={styles.sbc}>Simple Bed Cover</Text>
+                        <Text style={styles.sbc}>{details?.name}</Text>
                         <Text style={styles.cost}>$ 50.00</Text>
                     </View>
                     <View style={styles.iconset}>
@@ -19,7 +24,6 @@ const FavItemComponent = () => {
                     </View>
                 </View>
             </View>
-            
         </View>
     )
 }
@@ -34,7 +38,7 @@ const styles = StyleSheet.create({
         height: 100,
         width: 100,
         marginTop: 20,
-        marginLeft: 20,
+        marginLeft: 10,
         borderRadius: 10
     },
     headers: {
@@ -48,16 +52,16 @@ const styles = StyleSheet.create({
         marginLeft: 15
     },
     sbc: {
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         fontSize: 16
     },
     cost: {
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         fontSize: 18
     },
     iconset: {
         marginTop: 20,
-        marginLeft: 90
+        marginLeft: 75
     },
     icon1: {
         height: 20,
@@ -66,6 +70,6 @@ const styles = StyleSheet.create({
     icon2: {
         height: 20,
         width: 25,
-        marginTop: 50
+        marginTop: 60
     },
 })

@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     height: 70,
     width: "100%",
     flexDirection: "row",
-    gap: 95,
+    gap: 85,
   },
   search: {
     height: 25,
@@ -88,12 +88,12 @@ const styles = StyleSheet.create({
   },
   heading1: {
     fontSize: 20,
-    fontFamily: "GelasioRegular",
+    // fontFamily: "GelasioRegular",
     textAlign: "center"
   },
   heading2: {
     fontSize: 24,
-    fontFamily: "GelasioBold",
+    // fontFamily: "GelasioBold",
     textAlign: "center"
   },
   cart: {
@@ -104,11 +104,11 @@ const styles = StyleSheet.create({
   view2: {
     flexDirection: "row",
     marginLeft: 15,
-    marginTop: 20,
-    gap:23
+    marginTop: 10,
+    gap:12.5
   },
   bottomtext:{
-    fontFamily:"NunitoSansRegular",
+    // fontFamily:"NunitoSansRegular",
     textAlign:"center"
   }
 })

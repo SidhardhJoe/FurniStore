@@ -93,14 +93,14 @@ const styles = StyleSheet.create({
         marginTop: "8%"
     },
     hello: {
-        fontFamily: "GelasioRegular",
+        // fontFamily: "GelasioRegular",
         fontSize: 30,
         color: "#606060",
         marginTop: 30,
         marginLeft: 30
     },
     welcomeback: {
-        fontFamily: "MerriweatherBold",
+        // fontFamily: "MerriweatherBold",
         fontSize: 30,
         marginLeft: 30
     },
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     emailtext: {
         marginBottom: 20,
         fontSize: 20,
-        fontFamily: "GelasioRegular",
+        // fontFamily: "GelasioRegular",
         color: "#909090"
     },
     passbox: {
@@ -131,12 +131,12 @@ const styles = StyleSheet.create({
     passtext: {
         marginBottom: 20,
         fontSize: 20,
-        fontFamily: "GelasioRegular",
+        // fontFamily: "GelasioRegular",
         color: "#909090"
     },
     forgot: {
         fontSize: 18,
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         textAlign: "center",
         marginTop: 30
     },
@@ -145,19 +145,19 @@ const styles = StyleSheet.create({
         width: 200,
         backgroundColor: "black",
         borderRadius: 10,
-        marginLeft: "25%",
+        marginLeft: "23%",
         marginTop: 30
     },
     logintext: {
         color: "white",
         fontSize: 18,
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         textAlign: "center",
         marginTop: 10
     },
     signup: {
         fontSize: 18,
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         textAlign: "center",
         marginTop: 30
     }

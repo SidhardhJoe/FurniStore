@@ -28,28 +28,33 @@ import AddressPage from './Screen/AddressPage';
 
 const Stack = createNativeStackNavigator();
 
-const LoadFonts = () => {
-  return useFonts({
-    GelasioRegular: require('./Fonts/static/Gelasio-Regular.ttf'),
-    GelasioBold: require('./Fonts/static/Gelasio-Bold.ttf'),
-    NunitoSansRegular: require('./Fonts/static/NunitoSansRegular.ttf'),
-    NunitoSansSemiBold: require('./Fonts/static/NunitoSansSemiBold.ttf'),
-    MerriweatherRegular: require('./Fonts/static/Merriweather-Regular.ttf'),
-    MerriweatherBold: require('./Fonts/static/Merriweather-Bold.ttf')
-  })
-}
 
+// const LoadFonts = () => {
+//   return useFonts({
+//     GelasioRegular: require('./Fonts/static/Gelasio-Bold.ttf'),
+//     // GelasioBold: require('./Fonts/static/Gelasio-Bold.ttf'),
+//     // NunitoSansRegular: require('./Fonts/static/NunitoSansRegular.ttf'),
+//     // NunitoSansSemiBold: require('./Fonts/static/NunitoSansSemiBold.ttf'),
+//     // MerriweatherRegular: require('./Fonts/static/Merriweather-Regular.ttf'),
+//     // MerriweatherBold: require('./Fonts/static/Merriweather-Bold.ttf')
+//   })
+// }
 
 const Navigation = () => {
-  const [loaded] = LoadFonts();
-  const { user } = useAuth();
 
-  if (!loaded) {
-    return null;
-  } if (user) {
+  // const [loaded] = LoadFonts();
+  const { user } = useAuth();
+  // {console.log('user', loaded)}
+
+  // if (!loaded) {
+  //   // {console.log('user', user)}
+
+  //   return null;
+  // } 
+  if (user) {
     return (
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='BottomNav'>
+        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Page1'>
           <Stack.Screen name='BottomNav' component={BottomNav} />
           <Stack.Screen name='SearchPage' component={SearchPage} />
           <Stack.Screen name='CartPage' component={CartPage} />

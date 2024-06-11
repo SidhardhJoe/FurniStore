@@ -28,6 +28,7 @@ const Profile = () => {
           <Image source={require("../Icons/Logout.png")} style={styles.logout} />
         </TouchableOpacity>
       </View>
+
       <View style={styles.namebox} >
         <View style={styles.pp}>
           <TouchableOpacity onPress={()=>navigate('SettingsPage')}>
@@ -126,7 +127,7 @@ const styles = StyleSheet.create({
     marginTop: 25
   },
   text1: {
-    fontFamily: "MerriweatherBold",
+    // fontFamily: "MerriweatherBold",
     fontSize: 20,
     marginTop: "6%"
   },
@@ -148,11 +149,11 @@ const styles = StyleSheet.create({
     marginLeft: 20
   },
   name1: {
-    fontFamily: "NunitoSansSemiBold",
+    // fontFamily: "NunitoSansSemiBold",
     fontSize: 20,
   },
   name2: {
-    fontFamily: "NunitoSansRegular",
+    // fontFamily: "NunitoSansRegular",
     fontSize: 16,
     color: "#808080"
   },
@@ -161,9 +162,9 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   orderbox: {
-    height: 100,
+    height: 70,
     backgroundColor: "#DEDEDE",
-    width: 360,
+    width: 300,
     marginLeft: 27,
     marginBottom: 18,
     borderRadius: 10,
@@ -171,15 +172,15 @@ const styles = StyleSheet.create({
     justifyContent:"space-between"
   },
   text3:{
-    fontFamily:"NunitoSansSemiBold",
+    // fontFamily:"NunitoSansSemiBold",
     fontSize:18
   },
   text31:{
-    fontFamily:"NunitoSansRegular",
+    // fontFamily:"NunitoSansRegular",
     fontSize:14
   },
   miniboxinside:{
-    marginTop:25,
+    marginTop:12,
     marginLeft:15
   },
   forwardicon:{
