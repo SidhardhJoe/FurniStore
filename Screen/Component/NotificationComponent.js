@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         height:120,
         width:412,
         flexDirection:"row"
-        // backgroundColor:"grey"
+        
     },
     img:{
         height:100,
