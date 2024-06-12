@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     marginTop: "5%"
   },
   headertext: {
-    fontFamily: "MerriweatherBold",
+    // fontFamily: "MerriweatherBold",
     fontSize: 20
   },
   searchicon: {
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     height: 50,
     width: 290,
     backgroundColor: "black",
-    marginLeft: "10%",
+    marginLeft: "15%",
     marginBottom: 20,
     borderRadius: 10,
   },
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 18,
     marginTop: 10,
-    fontFamily: "NunitoSansSemiBold"
+    // fontFamily: "NunitoSansSemiBold"
   },
   // outerview:{
   //   width:"auto"

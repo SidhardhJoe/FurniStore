@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     },
     welcome: {
         marginLeft: 30,
-        fontFamily: "MerriweatherBold",
+        // fontFamily: "MerriweatherBold",
         fontSize: 30,
         marginTop: 30
     },
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     nametext: {
         marginBottom: 20,
         fontSize: 20,
-        fontFamily: "NunitoSansRegular",
+        // fontFamily: "NunitoSansRegular",
         color: "#909090"
     },
     signupbox2: {
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     signuptext1: {
         textAlign: "center",
         color: "white",
-        fontStyle: "NunitoSansSemiBold",
+        // fontStyle: "NunitoSansSemiBold",
         fontSize: 18,
         marginTop: 10
     },
@@ -147,11 +147,11 @@ const styles = StyleSheet.create({
     },
     lastbox1: {
         fontSize: 18,
-        fontFamily: "NunitoSansRegular"
+        // fontFamily: "NunitoSansRegular"
     },
     lastbox2: {
         fontSize: 18,
-        fontFamily: "NunitoSansSemiBold"
+        // fontFamily: "NunitoSansSemiBold"
     }
 
 })

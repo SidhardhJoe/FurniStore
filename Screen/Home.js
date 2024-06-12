@@ -10,9 +10,9 @@ const Home = () => {
   
   const { navigate } = useNavigation();
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       <StatusBar style="light-content" />
-      {console.log(details)}
+      {/* {console.log(details)} */}
       <View style={styles.mainbar}>
         <TouchableOpacity onPress={() => navigate('SearchPage')}>
           <Image style={styles.search} source={require("../Icons/Search.png")} />

@@ -2,14 +2,9 @@ import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 const FavItemComponent = ({ alex :details}) => {
-
-  
-
     return (
         <View style={styles.container}>
-
             <View>
-
                 <View style={styles.headers}>
                     <View>
                         <Image source={{ uri: details?.image }} style={styles.cover} />
