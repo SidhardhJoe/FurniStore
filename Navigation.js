@@ -32,11 +32,11 @@ const Stack = createNativeStackNavigator();
 // const LoadFonts = () => {
 //   return useFonts({
 //     GelasioRegular: require('./Fonts/static/Gelasio-Bold.ttf'),
-//     // GelasioBold: require('./Fonts/static/Gelasio-Bold.ttf'),
-//     // NunitoSansRegular: require('./Fonts/static/NunitoSansRegular.ttf'),
-//     // NunitoSansSemiBold: require('./Fonts/static/NunitoSansSemiBold.ttf'),
-//     // MerriweatherRegular: require('./Fonts/static/Merriweather-Regular.ttf'),
-//     // MerriweatherBold: require('./Fonts/static/Merriweather-Bold.ttf')
+//     GelasioBold: require('./Fonts/static/Gelasio-Bold.ttf'),
+//     NunitoSansRegular: require('./Fonts/static/NunitoSansRegular.ttf'),
+//     NunitoSansSemiBold: require('./Fonts/static/NunitoSansSemiBold.ttf'),
+//     MerriweatherRegular: require('./Fonts/static/Merriweather-Regular.ttf'),
+//     MerriweatherBold: require('./Fonts/static/Merriweather-Bold.ttf')
 //   })
 // }
 
