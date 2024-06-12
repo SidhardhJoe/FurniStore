@@ -2,8 +2,10 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import ItemComponent from '../Component/ItemComponent'
 import { ScrollView } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
 const ChairPage = () => {
+  const { navigate } = useNavigation();
   return (
     <View>
       <View style={styles.mainbar}>
@@ -37,6 +39,7 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "row",
     gap: 135,
+    backgroundColor:"white"
   },
   search: {
     height: 25,
