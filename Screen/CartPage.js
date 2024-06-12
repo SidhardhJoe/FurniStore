@@ -110,7 +110,7 @@ console.log("alexxx" , details)
 
   return (
     <View style={styles.container}>
-      {console.log(details)}
+      
       <View style={styles.topbox}>
         <TouchableOpacity onPress={() => navigate('ProductPage', { details })}>
           <Image style={styles.backicon} source={require("../Icons/back1.png")} />
@@ -119,10 +119,8 @@ console.log("alexxx" , details)
       </View>
 
       <ScrollView style={styles.cbox}>
-        {/* {details?.map((details, index) => ( */}
+       
           <FavItemComponent  alex={details} />
-          {/* {console.log(details)} */}
-        {/* // ))} */}
       </ScrollView>
 
       <View style={styles.ttlbox}>
@@ -157,7 +155,7 @@ const styles = StyleSheet.create({
   },
   txtin: {
     marginLeft: 130,
-    fontFamily: "MerriweatherBold",
+    // fontFamily: "MerriweatherBold",
     fontSize: 20
   },
   cbox: {
@@ -176,20 +174,20 @@ const styles = StyleSheet.create({
   },
   checkouttxt: {
     color: "white",
-    fontFamily: "NunitoSansSemiBold",
+    // fontFamily: "NunitoSansSemiBold",
     textAlign: "center",
     fontSize: 18,
     marginTop: 10
   },
   txttotal: {
-    fontFamily: "NunitoSansSemiBold",
+    // fontFamily: "NunitoSansSemiBold",
     fontSize: 20,
     color: "#808080",
     marginBottom: 10,
     marginLeft: 27
   },
   txtmoney: {
-    fontFamily: "NunitoSansSemiBold",
+    // fontFamily: "NunitoSansSemiBold",
     fontSize: 18,
     marginLeft: 220,
     marginTop: 5

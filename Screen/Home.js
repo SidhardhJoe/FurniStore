@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     height: 70,
     width: "100%",
     flexDirection: "row",
-    gap: 85,
+    gap: 105,
   },
   search: {
     height: 25,
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     marginLeft: 15,
     marginTop: 10,
-    gap:12.5
+    gap:23
   },
   bottomtext:{
     // fontFamily:"NunitoSansRegular",

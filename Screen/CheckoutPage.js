@@ -96,13 +96,13 @@ const styles = StyleSheet.create({
         marginLeft: 55,
         marginBottom: 20,
         borderRadius: 10,
-        marginTop: 45
+        marginTop: 35
     },
     checkouttext: {
         color: "white",
         textAlign: "center",
         marginTop: 15,
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
 
     },
     backicon: {
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     },
     carttext: {
         marginLeft: 130,
-        fontFamily: "MerriweatherBold",
+        // fontFamily: "MerriweatherBold",
         fontSize: 20,
         marginTop: 10
     },
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
         marginTop: 20
     },
     sat: {
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         fontSize: 18,
         color: "#909090",
         marginLeft: 20
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 10
     },
     boxtxt: {
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         fontSize: 18,
         marginTop: 10,
         marginLeft: 20
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
         borderBottomRightRadius: 10
     },
     box4txt: {
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         fontSize: 14,
         marginLeft: 20
     },
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
     cardtxt: {
         marginTop: 20,
         marginLeft: 20,
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         fontSize: 16
     },
     dhlicon: {
@@ -209,11 +209,11 @@ const styles = StyleSheet.create({
         marginTop: 15,
     },
     desctxt: {
-        fontFamily: "NunitoSansRegular",
+        // fontFamily: "NunitoSansRegular",
         fontSize: 18
     },
     desctxt1: {
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         fontSize: 18
     }
 

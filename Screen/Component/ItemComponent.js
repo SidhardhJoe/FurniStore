@@ -35,16 +35,16 @@ const styles = StyleSheet.create({
   },
   outline: {
     height: 180,
-    width: 155,
+    width: 180,
     borderRadius: 10
   },
   box: {
     height: 200,
-    width: 150,
+    width: 170,
     marginLeft: 15,
     marginTop: 30,
     marginBottom:10,
-    marginRight:15
+    marginRight:15,
     // backgroundColor:"black"
   },
   text1: {

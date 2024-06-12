@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     },
     iconset: {
         marginTop: 20,
-        marginLeft: 75
+        marginLeft: 180
     },
     icon1: {
         height: 20,

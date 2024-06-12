@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         backgroundColor: "white"
     },
     text1: {
-        fontFamily: "MerriweatherBold",
+        // fontFamily: "MerriweatherBold",
         textAlign: "center",
         fontSize: 35,
         marginTop: 130
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         marginLeft: "45%"
     },
     text2: {
-        fontFamily: "NunitoSansRegular",
+        // fontFamily: "NunitoSansRegular",
         fontSize: 18
     },
     textbox: {
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     },
     tyotext: {
         color: "white",
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         fontSize: 18,
         textAlign: "center",
         justifyContent: "center",
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
         borderWidth: 1
     },
     bthtext: {
-        fontFamily: "NunitoSansSemiBold",
+        // fontFamily: "NunitoSansSemiBold",
         fontSize: 18,
         textAlign: "center",
         justifyContent: "center",
