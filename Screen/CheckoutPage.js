@@ -1,10 +1,14 @@
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 import React from 'react'
+import { useState } from 'react';
+import { TextInput } from 'react-native';
 
 const CheckoutPage = ({route}) => {
     const { navigate } = useNavigation();
     const{details}=route.params
+    const [name, setName]=useState('Sidhardh Joe')
+    const [address, setAddress]=useState('25 rue Robert Latouche, Nice, 06200, Côte D’azur, France')
     return (
         <View style={styles.container}>
             <View style={styles.box1}>
@@ -20,14 +24,24 @@ const CheckoutPage = ({route}) => {
                 </TouchableOpacity>
             </View>
             <View>
-                <TouchableOpacity onPress={()=>navigate('AddressPage')}>
+                {/* <TouchableOpacity onPress={()=>navigate('AddressPage')}> */}
                 <View style={styles.box3}>
-                    <Text style={styles.boxtxt}>Christo Kurian</Text>
+                    {/* <Text style={styles.boxtxt}>{name}</Text> */}
+                    <TextInput 
+                    value={name}
+                    onChangeText={text=>setName(text)}
+                    style={styles.boxtxt}
+                     />
                 </View>
                 <View style={styles.box4}>
-                    <Text style={styles.box4txt}>25 rue Robert Latouche, Nice, 06200, Côte D’azur, France</Text>
+                    {/* <Text style={styles.box4txt}>25 rue Robert Latouche, Nice, 06200, Côte D’azur, France</Text> */}
+                    <TextInput
+                    style={styles.box4txt}
+                    value={address}
+                    onChangeText={text=>setAddress(text)}
+                    />
                 </View>
-                </TouchableOpacity>
+                {/* </TouchableOpacity> */}
             </View>
             <View style={styles.box2}>
                 <Text style={styles.sat}>Payment</Text>
@@ -164,7 +178,10 @@ const styles = StyleSheet.create({
     box4txt: {
         // fontFamily: "NunitoSansSemiBold",
         fontSize: 14,
-        marginLeft: 20
+        marginLeft: 20,
+        width:270,
+        height:40,
+        // backgroundColor:"black"
     },
     box5: {
         height: 60,

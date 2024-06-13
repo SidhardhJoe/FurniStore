@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, StatusBar, ScrollView, Image } from 'react-native'
+import { StyleSheet, Text, View, StatusBar, ScrollView, Image, TextInput } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { TouchableOpacity } from 'react-native'
@@ -9,6 +9,7 @@ import useAuth from '../hooks/useAuth'
 
 
 const Profile = () => {
+  const [name, setName]=useState('Joe')
   const { navigate } = useNavigation();
   const {user} = useAuth()
   const handleLogout=async()=>{
@@ -36,9 +37,14 @@ const Profile = () => {
           </TouchableOpacity>
         </View>
         <View style={styles.insidetext}>
-          <TouchableOpacity onPress={()=>navigate('CongratsPage')}>
-          <Text style={styles.name1}>Christo Kurian</Text>
-          </TouchableOpacity>
+          {/* <TouchableOpacity onPress={()=>navigate('CongratsPage')}> */}
+          {/* <Text style={styles.name1}>Christo Kurian</Text> */}
+          <TextInput
+          style={styles.name1}
+          value={name}
+          onChangeText={text=>setName(text)}
+          />
+          {/* </TouchableOpacity> */}
           <Text style={styles.name2}>{user?.email}</Text>
         </View>
       </View>

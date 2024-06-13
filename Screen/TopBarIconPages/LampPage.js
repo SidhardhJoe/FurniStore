@@ -34,7 +34,7 @@ export default LampPage
 const styles = StyleSheet.create({
   mainbar: {
     // marginTop: "10%",
-    height: 70,
+    height: 70, 
     width: "100%",
     flexDirection: "row",
     gap: 140,
