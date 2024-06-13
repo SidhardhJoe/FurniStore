@@ -23,6 +23,7 @@ import CongratsPage from './Screen/CongratsPage';
 import CheckoutPage from './Screen/CheckoutPage';
 import useAuth from './hooks/useAuth';
 import AddressPage from './Screen/AddressPage';
+import EditPayment from './Screen/EditPayment';
 
 
 
@@ -72,6 +73,7 @@ const Navigation = () => {
           <Stack.Screen name='CongratsPage' component={CongratsPage}/>
           <Stack.Screen name='CheckoutPage' component={CheckoutPage}/>
           <Stack.Screen name='AddressPage' component={AddressPage} />
+          <Stack.Screen name='EditPayment' component={EditPayment}/>
         </Stack.Navigator>
       </NavigationContainer>
     )

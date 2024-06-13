@@ -77,7 +77,7 @@ const Profile = () => {
           </TouchableOpacity>
         </View>
         <View >
-          <TouchableOpacity style={styles.orderbox} onPress={()=>navigate('PaymentPage')}>
+          <TouchableOpacity style={styles.orderbox} onPress={()=>navigate('EditPayment')}>
           <View style={styles.miniboxinside}>
             <Text style={styles.text3}>Payment Method</Text>
             <Text style={styles.text31}>2 saved cards</Text>

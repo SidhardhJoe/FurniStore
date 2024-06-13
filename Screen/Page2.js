@@ -43,6 +43,7 @@ const Page2 = () => {
                         value={email}
                         onChangeText={value => setEmail(value)}
                         autoCapitalize='none'
+                        style={styles.inputbox}
 
                     />
                 </View>
@@ -52,6 +53,8 @@ const Page2 = () => {
                         value={password}
                         onChangeText={value => setPassword(value)}
                         secureTextEntry
+                        style={styles.inputbox}
+
                     />
                 </View>
                 <View>
@@ -160,5 +163,8 @@ const styles = StyleSheet.create({
         // fontFamily: "NunitoSansSemiBold",
         textAlign: "center",
         marginTop: 30
+    },
+    inputbox:{
+        fontSize:20
     }
 })
