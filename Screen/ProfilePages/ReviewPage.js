@@ -1,18 +1,27 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
 import React from 'react'
 import ReviewTab from '../Component/ReviewTab'
+import { useNavigation } from '@react-navigation/native'
+import { TouchableOpacity } from 'react-native'
 
 const ReviewPage = () => {
+  const { navigate } = useNavigation();
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.topbar}>
-        <Image source={require("../../Icons/back.png")} style={styles.backicon} />
+        <TouchableOpacity onPress={()=>navigate('Profile')}>
+          <Image source={require("../../Icons/back.png")} style={styles.backicon} />
+        </TouchableOpacity>
         <Text style={styles.toptxt}>Rating & Review</Text>
       </View>
       <View>
-        <ReviewTab/>
+        <ReviewTab />
+        <ReviewTab />
+        <ReviewTab />
+        <ReviewTab />
+        <ReviewTab />
       </View>
-    </View>
+    </ScrollView>
   )
 }
 
@@ -20,21 +29,21 @@ export default ReviewPage
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "black",
+    backgroundColor: "white",
     flex: 1
   },
   topbar: {
     flexDirection: "row",
     gap: 120
   },
-  backicon:{
-    height:25,
-    marginLeft:20,
-    marginTop:20
-  
+  backicon: {
+    height: 25,
+    marginLeft: 20,
+    marginTop: 20
+
   },
-  toptxt:{
-    marginTop:20,
-    fontSize:18
+  toptxt: {
+    marginTop: 20,
+    fontSize: 18
   }
 })

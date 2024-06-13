@@ -3,7 +3,7 @@ import React from 'react'
 
 const PaymentPage = () => {
   return (
-    <View>
+    <View >
       <Text>PaymentPage</Text>
     </View>
   )
