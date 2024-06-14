@@ -32,9 +32,9 @@ const Profile = () => {
 
       <View style={styles.namebox} >
         <View style={styles.pp}>
-          <TouchableOpacity onPress={()=>navigate('SettingsPage')}>
+          {/* <TouchableOpacity onPress={()=>navigate('SettingsPage')}> */}
           <Image source={require("../Images/pp.png")} style={styles.img1}/>
-          </TouchableOpacity>
+          {/* </TouchableOpacity> */}
         </View>
         <View style={styles.insidetext}>
           {/* <TouchableOpacity onPress={()=>navigate('CongratsPage')}> */}
