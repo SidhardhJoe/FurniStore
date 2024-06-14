@@ -23,7 +23,6 @@ const Notification = () => {
         <NotificationComponent />
         <NotificationComponent />
         <NotificationComponent />
-        <NotificationComponent />
       </ScrollView>
     </View>
   )

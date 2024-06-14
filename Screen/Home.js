@@ -25,11 +25,11 @@ const Home = () => {
             <Text style={styles.heading2}>BEAUTIFUL</Text>
           </View>
         </View>
-        <View>
+        {/* <View>
           <TouchableOpacity onPress={() => navigate('CartPage')}>
             <Image style={styles.cart} source={require("../Icons/Cart.png")} />
           </TouchableOpacity>
-        </View>
+        </View> */}
       </View>
       <View style={styles.view2}>
         <TouchableOpacity>

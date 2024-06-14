@@ -14,9 +14,9 @@ const Favourite = () => {
           <Image source={require("../Icons/Search.png")} style={styles.searchicon} />
         </TouchableOpacity>
         <Text style={styles.headertext}>Favourites</Text>
-        <TouchableOpacity onPress={() => navigate('CartPage')}>
+        {/* <TouchableOpacity onPress={() => navigate('CartPage')}>
           <Image source={require("../Icons/Cart.png")} style={styles.carticon} />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
       <ScrollView>
         <FavItemComponent />
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
   view1: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    gap:120,
     marginTop: "5%"
   },
   headertext: {
