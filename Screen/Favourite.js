@@ -24,7 +24,7 @@ const Favourite = () => {
       </ScrollView>
 
       <View style={styles.altmcbox}>
-        <TouchableOpacity onPress={()=>navigate('CartPage')}>
+        <TouchableOpacity >
         <Text style={styles.altmctext}>Add to cart</Text>
         </TouchableOpacity>
       </View>
@@ -34,6 +34,7 @@ const Favourite = () => {
   )
 }
 
+ {/* line:27 onPress={()=>navigate('CartPage')} */}
 export default Favourite
 
 const styles = StyleSheet.create({

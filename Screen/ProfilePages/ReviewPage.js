@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
 import React from 'react'
 import ReviewTab from '../Component/ReviewTab'
-import { useNavigation } from '@react-navigation/native'
 import { TouchableOpacity } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
 const ReviewPage = () => {
-  const { navigate } = useNavigation();
+  const {navigate}=useNavigation();
   return (
     <ScrollView style={styles.container}>
       <View style={styles.topbar}>

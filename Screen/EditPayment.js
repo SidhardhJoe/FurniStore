@@ -1,7 +1,10 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image, TextInput } from 'react-native'
 import React, { useState } from 'react'
+import { useNavigation } from '@react-navigation/native';
 
 const EditPayment = () => {
+    
+    const {navigate}=useNavigation();
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
     const [cvv, setCvv] = useState('');
@@ -9,7 +12,7 @@ const EditPayment = () => {
     return (
         <View style={styles.container}>
             <View style={styles.topbar}>
-                <TouchableOpacity onPress={() => navigate('CheckoutPage')}>
+                <TouchableOpacity onPress={() => navigate('Profile')}>
                     <Image source={require("../Icons/back.png")} style={styles.backicon} />
                 </TouchableOpacity>
                 <Text style={styles.toptxt}>Edit Payments</Text>
