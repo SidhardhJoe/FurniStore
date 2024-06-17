@@ -3,7 +3,7 @@ import React from 'react'
 
 const OrderPage = () => {
   return (
-    <View >
+    <View style={styles.container} >
       
     </View>
   )
@@ -12,5 +12,7 @@ const OrderPage = () => {
 export default OrderPage
 
 const styles = StyleSheet.create({
-  
+  container:{
+    backgroundColor:"white",
+  }
 })

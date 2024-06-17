@@ -1,6 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { useFonts } from 'expo-font';
 import Page1 from './Screen/Page1';
 import Page2 from './Screen/Page2';
@@ -24,6 +25,23 @@ import CheckoutPage from './Screen/CheckoutPage';
 import useAuth from './hooks/useAuth';
 import AddressPage from './Screen/AddressPage';
 import EditPayment from './Screen/EditPayment';
+import Delivered from './Screen/Delivered';
+import Cancelled from './Screen/Cancelled';
+import Processing from './Screen/Processing';
+
+
+
+const Topbar=createMaterialTopTabNavigator();
+
+function TopBars(){
+  return(
+    <Topbar.Navigator>
+      <Topbar.Screen name='Delivered' component={Delivered }/>
+      <Topbar.Screen name='Processing' component={Processing}/>
+      <Topbar.Screen name='Cancelled' component={Cancelled}/>
+    </Topbar.Navigator>
+  )
+}
 
 
 
@@ -45,13 +63,7 @@ const Navigation = () => {
 
   // const [loaded] = LoadFonts();
   const { user } = useAuth();
-  // {console.log('user', loaded)}
-
-  // if (!loaded) {
-  //   // {console.log('user', user)}
-
-  //   return null;
-  // } 
+  
   if (user) {
     return (
       <NavigationContainer>
@@ -59,7 +71,7 @@ const Navigation = () => {
           <Stack.Screen name='BottomNav' component={BottomNav} />
           <Stack.Screen name='SearchPage' component={SearchPage} />
           <Stack.Screen name='CartPage' component={CartPage} />
-          <Stack.Screen name='OrderPage' component={OrderPage} />
+          <Stack.Screen name='OrderPage' component={TopBars} />
           <Stack.Screen name='PaymentPage' component={PaymentPage} />
           <Stack.Screen name='ReviewPage' component={ReviewPage} />
           <Stack.Screen name='SettingsPage' component={SettingsPage} />
