@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const ProcessingItem = () => {
+const CancelledItem = () => {
     return (
         <View style={styles.container}>
             <View style={styles.view1}>
@@ -17,14 +17,14 @@ const ProcessingItem = () => {
                     <View style={styles.detailbox} >
                         <Text style={styles.dtxt}>Details</Text>
                     </View>
-                    <Text style={styles.dtxt2}>Processing</Text>
+                    <Text style={styles.dtxt2}>Cancelled</Text>
                 </View>
             </View>
         </View>
     )
 }
 
-export default ProcessingItem
+export default CancelledItem
 
 const styles = StyleSheet.create({
     container: {
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     dtxt2: {
         marginTop: 30,
         fontSize: 18,
-        color: "orange",
+        color: "red",
         marginRight: 20
     }
 })
