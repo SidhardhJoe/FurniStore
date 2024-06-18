@@ -9,23 +9,23 @@ I have intergrated Firebase for authentication. So while running the application
 ## Images
 <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718687776.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718687780.png" height="800"/>
 
-<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718687785.png" width="350" height="800" /> 
+<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718687785.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718684592.png" width="350" height="800" />
 
+ <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685482.png" width="350" height="800"/> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685484.png" width="350" height="800" />
 
-<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718684592.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685482.png" width="350" height="800"/>
+ <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685489.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685494.png" width="350" height="800" /> 
 
+<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685496.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685499.png" width="350" height="800" />
 
-<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685484.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685489.png" width="350" height="800" />
+ <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685502.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685509.png" width="350" height="800" />
 
-<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685494.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685496.png" width="350" height="800" /> 
+ <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685516.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685518.png" width="350" height="800" />
+ 
+ <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685520.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685528.png" width="350" height="800" />
 
-<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685499.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685502.png" width="350" height="800" /> 
+ <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685533.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685537.png" width="350" height="800" />
 
-<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685509.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685516.png" width="350" height="800" /> 
-<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685518.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685520.png" width="350" height="800" />
-
-<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685528.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685533.png" width="350" height="800" /> 
-<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685537.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685542.png" width="350" height="800" /> 
+ <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685542.png" width="350" height="800" /> 
 
 
 
