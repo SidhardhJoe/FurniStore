@@ -8,7 +8,7 @@ I have intergrated Firebase for authentication. So while running the application
 
 ## Images
 
-<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718684592.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685482.png"/>
+<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718684592.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685482.png" width="350" height="800"/>
 
 
 <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685484.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685489.png" width="350" height="800" />
@@ -27,7 +27,7 @@ I have intergrated Firebase for authentication. So while running the application
 
 
 # dependencies 
-"@expo/vector-icons": "^14.0.2",
+"@expo/vector-icons": "^14.0.2",<br>
     "@react-firebase/auth": "^0.2.10",
     "@react-native-async-storage/async-storage": "^1.23.1",
     "@react-native-firebase/app": "^20.0.0",
