@@ -7,6 +7,10 @@ I have intergrated Firebase for authentication. So while running the application
 
 
 ## Images
+<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718687776.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718687780.png" height="800"/>
+
+<img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718687785.png" width="350" height="800" /> 
+
 
 <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718684592.png" width="350" height="800" /> <img src="https://github.com/SidhardhJoe/FurniStore/blob/master/ScreenShots/Screenshot_1718685482.png" width="350" height="800"/>
 
