@@ -1,5 +1,5 @@
 
-# MeowGram
+# FurniStore
 
 This is FurnitStore, An application ccreated using react native. I have created a JS which has the details of the store items. I have used params to pass data between screens, there are no state management tools used like Redux, Zustand or Conext API. 
 I have intergrated Firebase for authentication. So while running the application you will need to create an account. 
